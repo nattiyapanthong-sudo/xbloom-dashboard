@@ -1131,6 +1131,32 @@ function exportCSV(){
 /* ══ PERFORMANCE TAB ══ */
 let perfMetric = 'gmv';
 const CAT_COLORS_MAP = {'XBloom Studio':'#a78bfa','accessories':'#5eb0f5','xPod and beans':'#b8f060','Spare part':'#f5c45e'};
+const ITEM_NAME_MAP = {
+  '27772049148': 'xBloom Studio — Midnight Black',
+  '28372044047': 'xBloom Studio — Moonlight White',
+  '54156895441': 'xBloom Studio — Sage',
+  '26324903864': 'Kinto Coffee Server 400ml (Limited)',
+  '26374899415': 'Timemore Coffee Spoon 10g',
+  '26624899104': 'Omni Tea Brewer',
+  '27774903582': 'Studio Travel Case',
+  '28972049338': 'Paper Filter Coffee (100 pcs)',
+  '29474894413': 'Omni Dripper — Transparent',
+  '29574903620': 'Omni Dripper — White',
+  '40453160565': 'Omni Dripper — Black',
+  '40929220724': 'xPod Sirinya Mossto (8 xPods)',
+  '44506062664': 'Studio Water Tank',
+  '44606052776': 'Water Pressure Part',
+  '48256057217': 'Replacement Drip Tray',
+  '49106065869': 'Magnetic Dosing Cup',
+  '51557444235': 'xPod Sunshine (8 xPods)',
+  '53256042092': 'xPod Dock',
+  '53406906304': 'xPod Huay Nam Khun HD (8 xPods)',
+  '53756301895': 'Taste Explorer Box Series 1',
+  '53957109362': 'xPod Ocean Blend (8 xPods)',
+  '54606033259': 'Studio Power Cord',
+  '55655575762': 'Kinto Coffee Server (SCS)',
+};
+function getProductName(itemId, fallback){ return ITEM_NAME_MAP[itemId] || fallback || itemId; }
 const catColor = c => CAT_COLORS_MAP[c] || '#8c8a85';
 
 function setMetric(m){
@@ -1190,7 +1216,7 @@ function aggByKey(rows, keyFn){
   const map={};
   rows.forEach(r=>{
     const k=keyFn(r); if(!k) return;
-    if(!map[k])map[k]={gmv:0,vis:0,pv:0,items:0,aovSum:0,aovN:0,crSum:0,crN:0,cat:r.category,name:r.product,itemId:r.itemId};
+    if(!map[k])map[k]={gmv:0,vis:0,pv:0,items:0,aovSum:0,aovN:0,crSum:0,crN:0,cat:r.category,name:getProductName(r.itemId,r.product),itemId:r.itemId};
     map[k].gmv+=r.gmv; map[k].vis+=r.visitors; map[k].pv+=r.pageViews; map[k].items+=r.itemSold;
     if(r.aov>0){map[k].aovSum+=r.aov;map[k].aovN++;}
     if(r.cr>0){map[k].crSum+=r.cr;map[k].crN++;}
