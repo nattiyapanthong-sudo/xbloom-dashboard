@@ -14,7 +14,7 @@
   font-weight: 400;
   font-style: normal;
 }
- 
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
   --bg:#0b0c0e;
@@ -39,7 +39,7 @@
   --r:10px;--rl:14px;
 }
 html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.5;min-height:100vh;}
- 
+
 /* ── TOPBAR ── */
 .topbar{
   position:fixed;top:0;left:0;right:0;z-index:100;height:56px;
@@ -50,7 +50,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .logo-wordmark{font-family:'QuincyCF',serif;font-size:17px;font-weight:400;letter-spacing:.02em;color:var(--t1);}
 .logo-pipe{width:1px;height:16px;background:var(--b3);margin:0 4px;}
 .logo-sub{font-size:11px;color:var(--t3);letter-spacing:.04em;text-transform:uppercase;}
- 
+
 .nav{display:flex;gap:0;border:1px solid var(--b2);border-radius:var(--r);overflow:hidden;}
 .nav-btn{display:flex;align-items:center;gap:6px;padding:6px 18px;font-size:11px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;border:none;background:none;color:var(--t3);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;border-right:1px solid var(--b1);}
 .nav-btn:last-child{border-right:none;}
@@ -58,7 +58,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .nav-btn.active{background:var(--s3);color:var(--t1);}
 .nav-btn.active svg{opacity:.8;}
 .nav-btn:hover:not(.active){color:var(--t2);background:var(--s2);}
- 
+
 .topbar-right{display:flex;align-items:center;gap:8px;}
 .sync-badge{display:flex;align-items:center;gap:5px;padding:4px 12px;border-radius:20px;font-size:10px;font-weight:400;letter-spacing:.05em;text-transform:uppercase;}
 .sync-badge.live{background:rgba(168,216,168,0.08);color:var(--pos);border:1px solid rgba(168,216,168,0.2);}
@@ -67,7 +67,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .sync-dot{width:4px;height:4px;border-radius:50%;background:currentColor;}
 .sync-badge.live .sync-dot{animation:pulse 2.5s infinite;}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
- 
+
 .gs-input-wrap{display:flex;gap:6px;align-items:center;}
 .gs-input{background:var(--s2);border:1px solid var(--b1);border-radius:var(--r);padding:5px 10px;font-size:11px;color:var(--t1);font-family:'DM Sans',sans-serif;outline:none;width:240px;}
 .gs-input::placeholder{color:var(--t3);}
@@ -77,11 +77,11 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .btn-upload,.btn-export{display:flex;align-items:center;gap:5px;padding:5px 12px;background:transparent;color:var(--t3);border:1px solid var(--b1);border-radius:var(--r);font-size:11px;letter-spacing:.04em;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;}
 .btn-upload:hover,.btn-export:hover{color:var(--t1);border-color:var(--b2);}
 #file-inp{display:none;}
- 
+
 /* ── PAGES ── */
 .page{display:none;padding:80px 36px 60px;}
 .page.active{display:block;}
- 
+
 /* ── SECTION HEADER ── */
 .section-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--b1);flex-wrap:wrap;gap:12px;}
 .section-title{font-family:'QuincyCF',serif;font-size:22px;font-weight:400;color:var(--t1);letter-spacing:-.01em;}
@@ -89,7 +89,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .filter-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
 .fsel{background:transparent;border:1px solid var(--b1);border-radius:var(--r);padding:6px 10px;font-size:11px;color:var(--t2);font-family:'DM Sans',sans-serif;outline:none;cursor:pointer;letter-spacing:.03em;}
 .fsel:focus{border-color:var(--b2);}
- 
+
 /* ── KPI GRID ── */
 .kpi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;margin-bottom:28px;border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;}
 .kpi{
@@ -108,7 +108,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .kpi-comp-lbl{font-size:8px;color:var(--t3);font-weight:400;letter-spacing:.08em;text-transform:uppercase;}
 .kpi-comp-val{font-size:10px;font-weight:400;font-family:'DM Mono',monospace;}
 .pos{color:var(--pos);}.neg{color:var(--neg);}.neu{color:var(--t2);}
- 
+
 /* ── CHARTS ── */
 .charts-row{display:grid;grid-template-columns:1fr 300px;gap:14px;margin-bottom:14px;}
 .card{background:var(--s2);border:1px solid var(--b1);border-radius:var(--rl);padding:24px;min-height:0;}
@@ -117,7 +117,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .legend{display:flex;gap:14px;font-size:10px;color:var(--t3);letter-spacing:.04em;}
 .leg{display:flex;align-items:center;gap:5px;}
 .leg-sq{width:6px;height:6px;border-radius:1px;}
- 
+
 /* DONUT */
 .donut-wrap{display:flex;align-items:center;gap:20px;padding-top:4px;}
 .donut-c{position:relative;width:130px;height:130px;flex-shrink:0;}
@@ -129,7 +129,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .dl-sw{width:8px;height:8px;border-radius:1px;flex-shrink:0;}
 .dl-name{color:var(--t2);flex:1;font-size:11px;}
 .dl-pct{font-family:'DM Mono',monospace;font-weight:400;color:var(--t1);font-size:10px;}
- 
+
 /* ── BOTTOM GRID ── */
 .bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
 .bar-rows{display:flex;flex-direction:column;gap:14px;}
@@ -139,7 +139,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .bar-val{font-family:'DM Mono',monospace;font-weight:400;color:var(--t1);}
 .bar-bg{height:1px;background:var(--b1);overflow:visible;position:relative;}
 .bar-fill{height:3px;border-radius:0;margin-top:-1px;transition:width .9s cubic-bezier(.23,1,.32,1);background:var(--accent);}
- 
+
 .prod-list{display:flex;flex-direction:column;gap:0;}
 .prod-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--b1);transition:opacity .15s;}
 .prod-row:last-child{border-bottom:none;}
@@ -152,7 +152,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .mini-bg{width:36px;height:1px;background:var(--b2);overflow:visible;position:relative;}
 .mini-fill{height:2px;margin-top:-0.5px;background:var(--accent);transition:width .8s cubic-bezier(.23,1,.32,1);}
 .prod-val{font-family:'DM Mono',monospace;font-size:11px;font-weight:400;color:var(--t1);min-width:54px;text-align:right;}
- 
+
 /* ── RAW TABLE ── */
 .data-ctrl{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
 .search{flex:1;min-width:180px;background:transparent;border:1px solid var(--b1);border-radius:var(--r);padding:7px 12px 7px 32px;font-size:12px;color:var(--t1);font-family:'DM Sans',sans-serif;outline:none;background-image:url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5.5' cy='5.5' r='3.5' stroke='%234a4845' stroke-width='1.3'/%3E%3Cpath d='M8.5 8.5l2.5 2.5' stroke='%234a4845' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:10px center;}
@@ -177,24 +177,24 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
 .cat-acc{background:rgba(94,176,245,.12);color:#7ec5f8;border:none;}
 .cat-xpod{background:rgba(184,240,96,.12);color:#c4f07a;border:none;}
 .cat-other{background:var(--s4);color:var(--t2);border:none;}
- 
+
 .pagi{display:flex;align-items:center;justify-content:space-between;padding:14px 0 0;font-size:11px;color:var(--t3);}
 .pagi-btns{display:flex;gap:4px;}
 .pb{width:28px;height:28px;border-radius:var(--r);border:1px solid var(--b1);background:none;color:var(--t3);cursor:pointer;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;transition:all .15s;}
 .pb:hover{border-color:var(--b2);color:var(--t1);}
 .pb.active{background:var(--pos);color:#0b0c0e;border-color:var(--pos);font-weight:600;}
 .pb:disabled{opacity:.2;cursor:default;}
- 
+
 @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fadeUp .4s ease both;}
 ::-webkit-scrollbar{width:3px;height:3px;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:var(--s5);border-radius:2px;}
- 
+
 /* ── RESPONSIVE ── */
 @media(max-width:1200px){.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr));}.charts-row{grid-template-columns:1fr;}.bottom-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:900px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.bottom-grid{grid-template-columns:1fr;}.topbar{flex-wrap:wrap;height:auto;padding:12px 20px;gap:10px;}.page{padding:110px 20px 40px;}.gs-input{width:160px;}}
- 
+
 /* ── DATE BAR ── */
 #date-bar{
   display:flex;align-items:flex-start;justify-content:space-between;
@@ -205,7 +205,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
 }
 #date-bar-left{display:flex;flex-direction:column;gap:10px;}
 #date-bar-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
- 
+
 #period-chips{display:flex;gap:6px;flex-wrap:wrap;}
 .period-chip{
   padding:5px 14px;font-size:11px;font-weight:400;
@@ -219,7 +219,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
   background:var(--pos);color:#0b0c0e;
   border-color:var(--pos);font-weight:500;
 }
- 
+
 #custom-range{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
 .date-input-wrap{display:flex;align-items:center;gap:6px;}
 .date-input-wrap label{font-size:10px;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;}
@@ -228,7 +228,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
   padding:4px 8px;font-size:11px;color:var(--t1);
   font-family:'DM Sans',sans-serif;outline:none;cursor:pointer;
 }
- 
+
 /* Compare toggle */
 #compare-toggle-wrap{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--t2);}
 .toggle-label{display:flex;align-items:center;gap:7px;cursor:pointer;user-select:none;}
@@ -254,14 +254,14 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
   opacity:.4;transition:opacity .2s;
 }
 #compare-period:not([disabled]){opacity:1;}
- 
+
 #selected-range-label{
   font-size:11px;color:var(--t3);
   font-family:'DM Mono',monospace;
   padding:4px 10px;background:var(--s3);border-radius:4px;
   border:1px solid var(--b1);white-space:nowrap;
 }
- 
+
 /* KPI delta badges */
 .kpi-delta{
   display:inline-flex;align-items:center;gap:3px;
@@ -271,11 +271,71 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
 .kpi-delta.pos{background:rgba(184,240,96,.12);color:var(--pos);}
 .kpi-delta.neg{background:rgba(245,96,94,.12);color:var(--neg);}
 .kpi-delta.neu{background:var(--s4);color:var(--t3);}
- 
+
+
+/* ── PERFORMANCE TAB ── */
+#page-perf .perf-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--b1);flex-wrap:wrap;gap:12px;}
+#page-perf .perf-title{font-family:'QuincyCF',serif;font-size:22px;font-weight:400;color:var(--t1);}
+#page-perf .perf-meta{font-size:11px;color:var(--t3);margin-top:4px;}
+.metric-pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;}
+.mpill{padding:5px 14px;font-size:11px;border-radius:20px;border:1px solid var(--b1);color:var(--t3);background:transparent;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s;}
+.mpill:hover{color:var(--t1);border-color:var(--b2);}
+.mpill.active{background:rgba(184,240,96,0.12);color:var(--pos);border-color:rgba(184,240,96,0.3);}
+.perf-summary{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:18px;}
+.ps-card{background:var(--s2);border:1px solid var(--b1);border-radius:var(--rl);padding:16px 14px 12px;}
+.ps-lbl{font-size:9px;color:var(--t3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px;}
+.ps-val{font-family:'QuincyCF',serif;font-size:20px;color:var(--t1);margin-bottom:10px;line-height:1.1;}
+.ps-comps{display:flex;gap:10px;border-top:1px solid var(--b1);padding-top:8px;}
+.ps-comp{display:flex;flex-direction:column;gap:2px;}
+.ps-comp-lbl{font-size:8px;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;}
+.ps-comp-val{font-size:10px;font-family:'DM Mono',monospace;font-weight:500;}
+.perf-table-wrap{background:var(--s2);border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;margin-bottom:16px;}
+.perf-table{width:100%;border-collapse:collapse;font-size:12px;}
+.perf-table thead tr{background:var(--s3);position:sticky;top:0;z-index:2;}
+.perf-table th{padding:9px 12px;text-align:left;font-size:9px;font-weight:400;color:var(--t3);letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--b1);white-space:nowrap;}
+.perf-table th.r{text-align:right;}
+.perf-table tbody tr{border-bottom:1px solid var(--b1);transition:background .1s;}
+.perf-table tbody tr:hover{background:var(--s3);}
+.perf-table tbody tr:last-child{border-bottom:none;}
+.perf-table tbody tr.cat-row{background:rgba(255,255,255,0.015);}
+.perf-table tbody tr.prod-row td:first-child{padding-left:28px;}
+.perf-table td{padding:9px 12px;color:var(--t2);white-space:nowrap;}
+.perf-table td.r{text-align:right;font-family:'DM Mono',monospace;font-size:11px;color:var(--t1);}
+.perf-table td.pos{text-align:right;font-family:'DM Mono',monospace;font-size:11px;color:var(--pos);}
+.perf-table td.neg{text-align:right;font-family:'DM Mono',monospace;font-size:11px;color:var(--neg);}
+.perf-table td.neu{text-align:right;font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);}
+.cat-name-cell{display:flex;align-items:center;gap:8px;}
+.cat-pip{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.cat-toggle{cursor:pointer;user-select:none;display:flex;align-items:center;gap:4px;}
+.cat-toggle-icon{font-size:10px;color:var(--t3);transition:transform .15s;}
+.share-bar-cell{padding:9px 12px;}
+.share-bg{height:3px;background:var(--s4);border-radius:2px;overflow:hidden;width:70px;}
+.share-fill{height:100%;border-radius:2px;transition:width .8s cubic-bezier(.23,1,.32,1);}
+.perf-bottom{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.perf-card{background:var(--s2);border:1px solid var(--b1);border-radius:var(--rl);padding:20px;}
+.perf-card-title{font-size:9px;color:var(--t3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;}
+.prod-bar-list{display:flex;flex-direction:column;gap:9px;}
+.prod-bar-item{display:flex;align-items:center;gap:8px;}
+.prod-bar-name{font-size:11px;color:var(--t2);width:120px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.prod-bar-track{flex:1;height:4px;background:var(--s4);border-radius:2px;overflow:hidden;}
+.prod-bar-fill{height:100%;border-radius:2px;}
+.prod-bar-val{font-family:'DM Mono',monospace;font-size:10px;color:var(--t1);min-width:56px;text-align:right;}
+.glance-list{display:flex;flex-direction:column;gap:0;}
+.glance-row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--b1);}
+.glance-row:last-child{border-bottom:none;}
+.glance-name{font-size:12px;color:var(--t2);}
+.glance-vals{display:flex;gap:16px;}
+.glance-v{display:flex;flex-direction:column;align-items:flex-end;gap:1px;}
+.glance-lbl{font-size:8px;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;}
+.glance-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--t1);}
+.glance-num.pos{color:var(--pos);}.glance-num.neg{color:var(--neg);}.glance-num.neu{color:var(--t2);}
+@media(max-width:1200px){.perf-summary{grid-template-columns:repeat(3,minmax(0,1fr));}.perf-bottom{grid-template-columns:1fr;}}
+@media(max-width:800px){.perf-summary{grid-template-columns:repeat(2,minmax(0,1fr));}}
+
 </style>
 </head>
 <body>
- 
+
 <!-- ══ TOPBAR ══ -->
 <header class="topbar">
   <div class="logo">
@@ -283,7 +343,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     <span class="logo-pipe"></span>
     <span class="logo-sub">Shopee &middot; 2026</span>
   </div>
- 
+
   <div class="nav">
     <button class="nav-btn active" onclick="go('summary')" id="tab-summary">
       <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1" y="6" width="2.5" height="5" rx=".6"/><rect x="4.8" y="3.5" width="2.5" height="7.5" rx=".6"/><rect x="8.5" y="1" width="2.5" height="10" rx=".6"/></svg>
@@ -293,8 +353,12 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1" y="1" width="10" height="10" rx="1.5"/><path d="M1 4.5h10M4 4.5v6.5"/></svg>
       Raw Data
     </button>
+    <button class="nav-btn" onclick="go('perf')" id="tab-perf">
+      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 9l3-3 2 2 3-4 2 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Performance
+    </button>
   </div>
- 
+
   <div class="topbar-right">
     <div class="sync-badge live" id="sync-badge">
       <span class="sync-dot"></span>
@@ -315,10 +379,10 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     </button>
   </div>
 </header>
- 
+
 <!-- ══ SUMMARY PAGE ══ -->
 <div class="page active fade" id="page-summary">
- 
+
   <div class="section-hdr">
     <div>
       <div class="section-title">Executive Overview — Shopee</div>
@@ -333,7 +397,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       </select>
     </div>
   </div>
- 
+
   <!-- DATE RANGE SELECTOR -->
   <div id="date-bar">
     <div id="date-bar-left">
@@ -384,7 +448,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       <div id="selected-range-label"></div>
     </div>
   </div>
- 
+
   <!-- KPI CARDS -->
   <div class="kpi-grid">
     <div class="kpi" style="--accent:var(--green)">
@@ -424,7 +488,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       <div class="kpi-comps" id="kpi-comps-cr"></div>
     </div>
   </div>
- 
+
   <!-- CHARTS ROW -->
   <div class="charts-row">
     <div class="card">
@@ -451,7 +515,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       </div>
     </div>
   </div>
- 
+
   <!-- BOTTOM GRID -->
   <div class="bottom-grid">
     <div class="card">
@@ -468,7 +532,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     </div>
   </div>
 </div>
- 
+
 <!-- ══ RAW DATA PAGE ══ -->
 <div class="page fade" id="page-raw">
   <div class="data-ctrl">
@@ -512,7 +576,62 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     <div class="pagi-btns" id="pagi-btns"></div>
   </div>
 </div>
- 
+<!-- ══ PERFORMANCE PAGE ══ -->
+<div class="page" id="page-perf">
+  <div class="perf-header">
+    <div>
+      <div class="perf-title">Monthly Performance</div>
+      <div class="perf-meta" id="perf-meta">MTD vs LY · LW · LM — all categories</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <select class="fsel" id="perf-month" onchange="renderPerf()">
+        <option value="">All Months</option>
+      </select>
+      <select class="fsel" id="perf-cat" onchange="renderPerf()">
+        <option value="">All Categories</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="metric-pills" id="perf-pills">
+    <button class="mpill active" onclick="setMetric('gmv')">GMV</button>
+    <button class="mpill" onclick="setMetric('visitors')">Visitors</button>
+    <button class="mpill" onclick="setMetric('pageViews')">Page Views</button>
+    <button class="mpill" onclick="setMetric('itemSold')">Items Sold</button>
+    <button class="mpill" onclick="setMetric('aov')">AOV</button>
+    <button class="mpill" onclick="setMetric('cr')">CR%</button>
+  </div>
+
+  <div class="perf-summary" id="perf-summary"></div>
+  <div class="perf-table-wrap"><table class="perf-table" id="perf-table">
+    <thead><tr>
+      <th style="min-width:180px;">Category / Product</th>
+      <th class="r">MTD</th>
+      <th class="r">LY MTD</th>
+      <th class="r">vs LY</th>
+      <th class="r">vs LW</th>
+      <th class="r">vs LM</th>
+      <th class="r">Items</th>
+      <th class="r">AOV</th>
+      <th class="r">CR%</th>
+      <th style="min-width:90px;">Share</th>
+    </tr></thead>
+    <tbody id="perf-tbody"></tbody>
+  </table></div>
+
+  <div class="perf-bottom">
+    <div class="perf-card">
+      <div class="perf-card-title" id="perf-bar-title">Top products by GMV</div>
+      <div class="prod-bar-list" id="perf-bar-list"></div>
+    </div>
+    <div class="perf-card">
+      <div class="perf-card-title">Metrics at a glance</div>
+      <div class="glance-list" id="perf-glance"></div>
+    </div>
+  </div>
+</div>
+
+
 <script>
 /* ══════════════════════════════════════
    EMBEDDED DATA — your real CSV data
@@ -543,14 +662,14 @@ const EMBEDDED = {
     {name:"Replacement Drip Tray",gmv:3946,items:6,cat:"accessories"}
   ]
 };
- 
+
 /* ══ GOOGLE SHEETS ══ */
 const GS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTs2RCqN1FbdV8-KM1T2p1o07iGyYtMPuLFofmXmjNBnpQP9ZSSWpTQeVCNEcZElJS5ub5OGUjeajBr/pub?output=csv";
 const CORS_PROXIES = [
   u=>`https://corsproxy.io/?${encodeURIComponent(u)}`,
   u=>`https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
 ];
- 
+
 /* ══ STATE ══ */
 let allRows=[], sortCol='date', sortDir=-1, curPage=1;
 const PS=50;
@@ -561,12 +680,12 @@ const MONTH_LABEL={
   "2026-02":"Feb 2026","2026-03":"Mar 2026"
 };
 const MONTH_ORDER=["2025-12","2026-01","2026-02","2026-03"];
- 
+
 /* Date filter state */
 let activePeriod='all';
 let rangeFrom='2025-12', rangeTo='2026-03';
 let compareMode=false, comparePeriod='2025-12';
- 
+
 /* ══ PAGE SWITCH ══ */
 function go(name){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -574,20 +693,21 @@ function go(name){
   document.getElementById('page-'+name).classList.add('active');
   document.getElementById('tab-'+name).classList.add('active');
   if(name==='raw') renderTable();
+  if(name==='perf'){updatePerfFilters();renderPerf();}
 }
- 
+
 /* ══ SYNC BADGE ══ */
 function setSync(s,msg){
   const b=document.getElementById('sync-badge');
   b.className='sync-badge '+s;
   document.getElementById('sync-txt').textContent=msg;
 }
- 
+
 /* ══ FORMAT ══ */
 const baht=n=>{if(n>=1e6)return '฿'+(n/1e6).toFixed(2)+'M';if(n>=1e3)return '฿'+(n/1e3).toFixed(1)+'k';return '฿'+Math.round(n).toLocaleString();};
 const fmtN=n=>n>=1e3?(n/1e3).toFixed(1)+'k':Math.round(n).toLocaleString();
 function toN(v){try{const s=String(v).replace(/[^0-9.\-]/g,'');return parseFloat(s)||0;}catch{return 0;}}
- 
+
 /* ══ DATE PERIOD ══ */
 function getSelectedMonths(){
   if(activePeriod==='all') return MONTH_ORDER.slice();
@@ -598,7 +718,7 @@ function getSelectedMonths(){
   }
   return [activePeriod];
 }
- 
+
 function setPeriod(p){
   activePeriod=p;
   document.querySelectorAll('.period-chip').forEach(c=>c.classList.remove('active'));
@@ -608,33 +728,33 @@ function setPeriod(p){
   if(cr) cr.style.display=p==='custom'?'flex':'none';
   applyFilter();
 }
- 
+
 function applyCustomRange(){
   rangeFrom=document.getElementById('range-from').value;
   rangeTo=document.getElementById('range-to').value;
   applyFilter();
 }
- 
+
 function toggleCompare(on){
   compareMode=on;
   const sel=document.getElementById('compare-period');
   if(sel) sel.disabled=!on;
   applyFilter();
 }
- 
+
 /* ══ MAIN FILTER ══ */
 function applyFilter(){
   const months=getSelectedMonths();
   comparePeriod=document.getElementById('compare-period')?.value||'2025-12';
   const cf=document.getElementById('f-cat')?.value||'';
- 
+
   /* Update range label */
   const label=months.length===1
     ?(MONTH_LABEL[months[0]]||months[0])
     :`${MONTH_LABEL[months[0]]||months[0]} → ${MONTH_LABEL[months[months.length-1]]||months[months.length-1]}`;
   const rl=document.getElementById('selected-range-label');
   if(rl) rl.textContent=label;
- 
+
   if(allRows.length){
     const rows=allRows.filter(r=>months.includes(r.month)&&(!cf||r.category===cf));
     const crows=compareMode?allRows.filter(r=>r.month===comparePeriod&&(!cf||r.category===cf)):null;
@@ -643,7 +763,7 @@ function applyFilter(){
     buildFromEmbedded(months, cf);
   }
 }
- 
+
 /* ══ BUILD FROM EMBEDDED ══ */
 function buildFromEmbedded(months, catFilter){
   const D=EMBEDDED;
@@ -667,7 +787,7 @@ function buildFromEmbedded(months, catFilter){
   if(catFilter) prods=prods.filter(p=>p.cat===catFilter);
   renderDashboard({totals,months:filtMonths,categories:cats,top_products:prods}, compTotals);
 }
- 
+
 /* ══ BUILD FROM LIVE ROWS ══ */
 function buildAndRender(rows, compRows){
   function agg(rr){
@@ -705,11 +825,11 @@ function buildAndRender(rows, compRows){
   }
   renderDashboard(data, compTotals);
 }
- 
+
 /* ══ RENDER DASHBOARD ══ */
 function renderDashboard(data, compTotals){
   const t=data.totals;
- 
+
   /* Delta badge */
   function dtag(curr,prev){
     if(prev==null||prev===0) return '';
@@ -717,7 +837,7 @@ function renderDashboard(data, compTotals){
     const cls=p>0?'pos':p<0?'neg':'neu';
     return `<span class="kpi-delta ${cls}">${p>0?'↑':'↓'}${Math.abs(p).toFixed(1)}%</span>`;
   }
- 
+
   /* KPI values */
   document.getElementById('kv-gmv').innerHTML   = baht(t.gmv)          +(compTotals?dtag(t.gmv,   compTotals.gmv):'');
   document.getElementById('kv-vis').innerHTML   = fmtN(t.vis)          +(compTotals?dtag(t.vis,   compTotals.vis):'');
@@ -725,10 +845,10 @@ function renderDashboard(data, compTotals){
   document.getElementById('kv-items').innerHTML = fmtN(t.items)        +(compTotals?dtag(t.items, compTotals.items):'');
   document.getElementById('kv-aov').innerHTML   = baht(t.aov)          +(compTotals?dtag(t.aov,   compTotals.aov):'');
   document.getElementById('kv-cr').innerHTML    = t.cr.toFixed(2)+'%'  +(compTotals?dtag(t.cr,    compTotals.cr):'');
- 
+
   /* Donut center */
   document.getElementById('donut-val').textContent=baht(t.gmv);
- 
+
   /* Month keys sorted */
   const mKeys=Object.keys(data.months).sort();
   const mLabels=mKeys.map(k=>data.months[k].label||MONTH_LABEL[k]||k);
@@ -736,7 +856,7 @@ function renderDashboard(data, compTotals){
   const mItems=mKeys.map(k=>data.months[k].items);
   const mVis  =mKeys.map(k=>data.months[k].vis);
   const mAOV  =mKeys.map(k=>data.months[k].aov);
- 
+
   /* Sparklines */
   function spark(id,vals,stroke){
     const el=document.getElementById(id); if(!el||vals.length<2) return;
@@ -752,7 +872,7 @@ function renderDashboard(data, compTotals){
   spark('sp-vis',  mVis,  '#5eb0f5');
   spark('sp-items',mItems,'#4ecfb0');
   spark('sp-aov',  mAOV,  '#f5c45e');
- 
+
   /* ── KPI MONTH BREAKDOWNS (dynamic) ── */
   function renderKPIComps(id, vals, fmt){
     const el=document.getElementById('kpi-comps-'+id);
@@ -774,7 +894,7 @@ function renderDashboard(data, compTotals){
   renderKPIComps('items',mItems, v=>fmtN(v));
   renderKPIComps('aov',  mAOV,   v=>baht(v));
   renderKPIComps('cr',   mKeys.map(k=>data.months[k].cr),   v=>v.toFixed(2)+'%');
- 
+
   /* ── GMV CHART ── */
   const gmvDatasets=[
     {label:'GMV',  data:mGMV,  backgroundColor:'rgba(184,240,96,0.7)',borderRadius:4,yAxisID:'y',type:'bar'},
@@ -795,7 +915,7 @@ function renderDashboard(data, compTotals){
       }
     }
   });
- 
+
   /* ── DONUT CHART ── */
   const catE=Object.entries(data.categories).sort((a,b)=>b[1].gmv-a[1].gmv);
   const catTotal=catE.reduce((s,e)=>s+e[1].gmv,0);
@@ -808,7 +928,7 @@ function renderDashboard(data, compTotals){
   document.getElementById('donut-leg').innerHTML=catE.map((e,i)=>
     `<div class="dl"><div class="dl-sw" style="background:${CAT_COLORS[i%CAT_COLORS.length]};"></div><span class="dl-name">${e[0]}</span><span class="dl-pct">${catTotal?((e[1].gmv/catTotal)*100).toFixed(0):0}%</span></div>`
   ).join('');
- 
+
   /* ── METRICS CHART ── */
   if(metricsChart){metricsChart.destroy();metricsChart=null;}
   metricsChart=new Chart(document.getElementById('metricsChart'),{
@@ -828,13 +948,13 @@ function renderDashboard(data, compTotals){
       }
     }
   });
- 
+
   /* ── MONTHLY BARS ── */
   const maxG=Math.max(...mGMV,1);
   document.getElementById('month-bars').innerHTML=mKeys.map((k,i)=>
     `<div class="bar-row"><div class="bar-meta"><span class="bar-label">${mLabels[i]}</span><span class="bar-val">${baht(mGMV[i])}</span></div><div class="bar-bg"><div class="bar-fill" style="width:${(mGMV[i]/maxG*100).toFixed(1)}%;background:var(--pos);"></div></div></div>`
   ).join('');
- 
+
   /* ── TOP PRODUCTS ── */
   const maxP=data.top_products[0]?.gmv||1;
   const catBadge=c=>({XBloom_Studio:'cat-studio',accessories:'cat-acc','xPod and beans':'cat-xpod'}[c]||'cat-other');
@@ -842,7 +962,7 @@ function renderDashboard(data, compTotals){
     `<div class="prod-row"><span class="prod-rank">${i+1}</span><div class="prod-info"><div class="prod-name" title="${p.name}">${p.name.length>32?p.name.slice(0,30)+'…':p.name}</div><div class="prod-cat">${p.cat}</div></div><div class="prod-right"><div class="mini-bg"><div class="mini-fill" style="width:${(p.gmv/maxP*100).toFixed(0)}%;background:var(--pos);"></div></div><span class="prod-val">${baht(p.gmv)}</span></div></div>`
   ).join('');
 }
- 
+
 /* ══ GOOGLE SHEETS FETCH ══ */
 async function loadGoogleSheet(url, isRefresh=false){
   setSync('loading', isRefresh?'Refreshing…':'Connecting to Google Sheets…');
@@ -863,12 +983,12 @@ async function loadGoogleSheet(url, isRefresh=false){
   }
   setSync('err','Could not reach Google Sheets — showing cached data');
 }
- 
+
 function connectGS(){
   const u=document.getElementById('gs-url').value.trim()||GS_URL;
   loadGoogleSheet(u);
 }
- 
+
 /* ══ PROCESS CSV ══ */
 function processCSV(raw){
   allRows=raw.map(r=>{
@@ -898,7 +1018,7 @@ function processCSV(raw){
     const yr=parseInt(r.month.split('-')[0]);
     return yr>=2025&&yr<=2030;
   });
- 
+
   /* Update MONTH_ORDER and MONTH_LABEL from actual data */
   const uniqueMonths=[...new Set(allRows.map(r=>r.month).filter(Boolean))].sort();
   MONTH_ORDER.length=0;
@@ -910,7 +1030,7 @@ function processCSV(raw){
       MONTH_LABEL[m]=(names[parseInt(mn)]||mn)+' '+yr;
     }
   });
- 
+
   /* Rebuild period chips */
   const chips=document.getElementById('period-chips');
   if(chips){
@@ -918,7 +1038,7 @@ function processCSV(raw){
       +uniqueMonths.map(m=>`<button class="period-chip" onclick="setPeriod('${m}')" id="chip-${m}">${MONTH_LABEL[m]}</button>`).join('')
       +`<button class="period-chip" onclick="setPeriod('custom')" id="chip-custom">Custom range</button>`;
   }
- 
+
   /* Rebuild dropdowns */
   const opts=uniqueMonths.map(m=>`<option value="${m}">${MONTH_LABEL[m]}</option>`).join('');
   ['range-from','range-to','compare-period','rf-month'].forEach(id=>{
@@ -928,20 +1048,22 @@ function processCSV(raw){
       el.innerHTML=prefix+opts;
     }
   });
- 
+
   /* Rebuild category filter */
   const cats=[...new Set(allRows.map(r=>r.category).filter(c=>c&&c!=='#N/A'))].sort();
   ['f-cat','rf-cat'].forEach(id=>{
     const el=document.getElementById(id);
     if(el) el.innerHTML='<option value="">All Categories</option>'+cats.map(c=>`<option value="${c}">${c}</option>`).join('');
   });
- 
+
   document.getElementById('meta-line').textContent=`${allRows.length.toLocaleString()} records · live from Google Sheets`;
   activePeriod='all';
   applyFilter();
   renderTable();
+  updatePerfFilters();
+  if(document.getElementById('page-perf').classList.contains('active')) renderPerf();
 }
- 
+
 /* ══ FILE UPLOAD ══ */
 function handleUpload(e){
   const f=e.target.files[0]; if(!f) return;
@@ -951,7 +1073,7 @@ function handleUpload(e){
     setSync('live',f.name+' · uploaded');
   },error:()=>setSync('err','Parse error')});
 }
- 
+
 /* ══ RAW TABLE ══ */
 function renderTable(){
   const srch=document.getElementById('srch')?.value.toLowerCase()||'';
@@ -996,27 +1118,262 @@ function renderTable(){
 }
 function goPg(p){curPage=p;renderTable();}
 function srt(c){if(sortCol===c)sortDir*=-1;else{sortCol=c;sortDir=-1;}curPage=1;renderTable();}
- 
+
 function exportCSV(){
   if(!allRows.length){alert('No live data.');return;}
   const h='Date,Category,Product,GMV,Visitors,Page Views,Items Sold,AOV,CR%';
   const b=allRows.map(r=>[r.date,`"${r.category}"`,`"${r.product}"`,r.gmv,r.visitors,r.pageViews,r.itemSold,r.aov,r.cr].join(',')).join('\n');
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([h+'\n'+b],{type:'text/csv'}));a.download=`xbloom-${new Date().toISOString().split('T')[0]}.csv`;a.click();
 }
- 
+
+
+
+/* ══ PERFORMANCE TAB ══ */
+let perfMetric = 'gmv';
+const CAT_COLORS_MAP = {'XBloom Studio':'#a78bfa','accessories':'#5eb0f5','xPod and beans':'#b8f060','Spare part':'#f5c45e'};
+const catColor = c => CAT_COLORS_MAP[c] || '#8c8a85';
+
+function setMetric(m){
+  perfMetric=m;
+  document.querySelectorAll('.mpill').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.mpill').forEach(p=>{if(p.textContent.toLowerCase().replace(' ','').includes(m.replace('itemSold','itemssold').replace('pageViews','pageviews')))p.classList.add('active');});
+  // simpler: match by onclick
+  document.querySelectorAll('.mpill').forEach(p=>{
+    const oc=p.getAttribute('onclick')||'';
+    if(oc.includes("'"+m+"'")) p.classList.add('active');
+  });
+  renderPerf();
+}
+
+function getPerfRows(){
+  if(!allRows.length) return [];
+  const mf=document.getElementById('perf-month')?.value||'';
+  const cf=document.getElementById('perf-cat')?.value||'';
+  return allRows.filter(r=>(!mf||r.month===mf)&&(!cf||r.category===cf));
+}
+
+function getPrevRows(type){
+  /* type: 'ly'=last year, 'lw'=last week (prev month as proxy), 'lm'=last month */
+  if(!allRows.length) return [];
+  const mf=document.getElementById('perf-month')?.value||'';
+  const cf=document.getElementById('perf-cat')?.value||'';
+  if(!mf) return [];
+  const [yr,mn]=mf.split('-').map(Number);
+  let prevKey='';
+  if(type==='ly') prevKey=(yr-1)+'-'+String(mn).padStart(2,'0');
+  else if(type==='lm'){
+    const pm=mn===1?12:mn-1, py=mn===1?yr-1:yr;
+    prevKey=py+'-'+String(pm).padStart(2,'0');
+  }
+  else if(type==='lw'){
+    /* use same month prev year as LW proxy if no weekly data */
+    const pm=mn===1?12:mn-1, py=mn===1?yr-1:yr;
+    prevKey=py+'-'+String(pm).padStart(2,'0');
+  }
+  return allRows.filter(r=>r.month===prevKey&&(!cf||r.category===cf));
+}
+
+function aggRows(rows){
+  if(!rows.length) return null;
+  const gmv=rows.reduce((s,r)=>s+r.gmv,0);
+  const vis=rows.reduce((s,r)=>s+r.visitors,0);
+  const pv=rows.reduce((s,r)=>s+r.pageViews,0);
+  const items=rows.reduce((s,r)=>s+r.itemSold,0);
+  const aovR=rows.filter(r=>r.aov>0);
+  const crR=rows.filter(r=>r.cr>0);
+  const aov=aovR.length?aovR.reduce((s,r)=>s+r.aov,0)/aovR.length:0;
+  const cr=crR.length?crR.reduce((s,r)=>s+r.cr,0)/crR.length:0;
+  return{gmv,vis,pv,items,aov,cr};
+}
+
+function aggByKey(rows, keyFn){
+  const map={};
+  rows.forEach(r=>{
+    const k=keyFn(r); if(!k) return;
+    if(!map[k])map[k]={gmv:0,vis:0,pv:0,items:0,aovSum:0,aovN:0,crSum:0,crN:0,cat:r.category,name:r.product,itemId:r.itemId};
+    map[k].gmv+=r.gmv; map[k].vis+=r.visitors; map[k].pv+=r.pageViews; map[k].items+=r.itemSold;
+    if(r.aov>0){map[k].aovSum+=r.aov;map[k].aovN++;}
+    if(r.cr>0){map[k].crSum+=r.cr;map[k].crN++;}
+  });
+  Object.values(map).forEach(v=>{v.aov=v.aovN?v.aovSum/v.aovN:0;v.cr=v.crN?v.crSum/v.crN:0;});
+  return map;
+}
+
+function fmtMetric(v, m){
+  if(m==='gmv'||m==='aov') return baht(v);
+  if(m==='cr') return v.toFixed(2)+'%';
+  return fmtN(v);
+}
+
+function getDelta(curr, prev){
+  if(!prev||prev===0) return null;
+  return((curr-prev)/prev)*100;
+}
+
+function deltaCell(pct){
+  if(pct===null) return '<td class="neu">—</td>';
+  const cls=pct>0?'pos':pct<0?'neg':'neu';
+  return `<td class="${cls}">${pct>0?'+':''}${pct.toFixed(0)}%</td>`;
+}
+
+function updatePerfFilters(){
+  if(!allRows.length) return;
+  const months=[...new Set(allRows.map(r=>r.month).filter(Boolean))].sort();
+  const cats=[...new Set(allRows.map(r=>r.category).filter(c=>c&&c!=='#N/A'))].sort();
+  const pm=document.getElementById('perf-month');
+  if(pm) pm.innerHTML='<option value="">All Months</option>'+months.map(m=>`<option value="${m}">${MONTH_LABEL[m]||m}</option>`).join('');
+  const pc=document.getElementById('perf-cat');
+  if(pc) pc.innerHTML='<option value="">All Categories</option>'+cats.map(c=>`<option value="${c}">${c}</option>`).join('');
+}
+
+function renderPerf(){
+  const rows=getPerfRows();
+  const lyRows=getPrevRows('ly');
+  const lwRows=getPrevRows('lw');
+  const lmRows=getPrevRows('lm');
+
+  const totals=aggRows(rows)||{gmv:0,vis:0,pv:0,items:0,aov:0,cr:0};
+  const lyTot=aggRows(lyRows);
+  const lwTot=aggRows(lwRows);
+  const lmTot=aggRows(lmRows);
+
+  /* Update meta */
+  const mf=document.getElementById('perf-month')?.value||'';
+  const lbl=mf?(MONTH_LABEL[mf]||mf):'All time';
+  const el=document.getElementById('perf-meta');
+  if(el) el.textContent=`${lbl} · ${rows.length.toLocaleString()} records · MTD vs LY · LW · LM`;
+
+  /* Summary cards */
+  const metrics=[
+    {key:'gmv',  label:'GMV',        val:totals.gmv,  ly:lyTot?.gmv,  lw:lwTot?.gmv,  lm:lmTot?.gmv,  fmt:v=>baht(v)},
+    {key:'vis',  label:'Visitors',   val:totals.vis,  ly:lyTot?.vis,  lw:lwTot?.vis,  lm:lmTot?.vis,  fmt:v=>fmtN(v)},
+    {key:'pv',   label:'Page Views', val:totals.pv,   ly:lyTot?.pv,   lw:lwTot?.pv,   lm:lmTot?.pv,   fmt:v=>fmtN(v)},
+    {key:'items',label:'Items Sold', val:totals.items,ly:lyTot?.items,lw:lwTot?.items,lm:lmTot?.items,fmt:v=>fmtN(v)},
+    {key:'aov',  label:'Avg AOV',    val:totals.aov,  ly:lyTot?.aov,  lw:lwTot?.aov,  lm:lmTot?.aov,  fmt:v=>baht(v)},
+    {key:'cr',   label:'Conv. Rate', val:totals.cr,   ly:lyTot?.cr,   lw:lwTot?.cr,   lm:lmTot?.cr,   fmt:v=>v.toFixed(2)+'%'},
+  ];
+
+  const sumEl=document.getElementById('perf-summary');
+  if(sumEl) sumEl.innerHTML=metrics.map(m=>{
+    const dly=getDelta(m.val,m.ly), dlw=getDelta(m.val,m.lw), dlm=getDelta(m.val,m.lm);
+    const dc=p=>p===null?'neu':p>0?'pos':p<0?'neg':'neu';
+    const df=p=>p===null?'—':(p>0?'+':'')+p.toFixed(0)+'%';
+    return `<div class="ps-card">
+      <div class="ps-lbl">${m.label}</div>
+      <div class="ps-val">${m.fmt(m.val)}</div>
+      <div class="ps-comps">
+        <div class="ps-comp"><div class="ps-comp-lbl">VS LY</div><div class="ps-comp-val ${dc(dly)}">${df(dly)}</div></div>
+        <div class="ps-comp"><div class="ps-comp-lbl">VS LW</div><div class="ps-comp-val ${dc(dlw)}">${df(dlw)}</div></div>
+        <div class="ps-comp"><div class="ps-comp-lbl">VS LM</div><div class="ps-comp-val ${dc(dlm)}">${df(dlm)}</div></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  /* Category → product breakdown */
+  const byCat=aggByKey(rows, r=>r.category);
+  const byProd=aggByKey(rows, r=>r.itemId||r.product);
+  const lyByCat=aggByKey(lyRows, r=>r.category);
+  const lyByProd=aggByKey(lyRows, r=>r.itemId||r.product);
+  const lwByCat=aggByKey(lwRows, r=>r.category);
+  const lmByCat=aggByKey(lmRows, r=>r.category);
+  const lmByProd=aggByKey(lmRows, r=>r.itemId||r.product);
+
+  const m=perfMetric;
+  const totalMetricVal=totals[m]||1;
+
+  const cats=Object.entries(byCat).sort((a,b)=>b[1][m]-a[1][m]);
+  let tbody='';
+
+  cats.forEach(([cat,cv])=>{
+    const lyC=lyByCat[cat], lwC=lwByCat[cat], lmC=lmByCat[cat];
+    const dly=getDelta(cv[m],lyC?.[m]), dlw=getDelta(cv[m],lwC?.[m]), dlm=getDelta(cv[m],lmC?.[m]);
+    const sharePct=totalMetricVal?((cv[m]/totalMetricVal)*100):0;
+    const col=catColor(cat);
+
+    tbody+=`<tr class="cat-row">
+      <td><div class="cat-name-cell"><div class="cat-pip" style="background:${col};"></div><span style="font-size:12px;font-weight:500;color:var(--t1);">${cat}</span></div></td>
+      <td class="r">${fmtMetric(cv[m],m)}</td>
+      <td class="r">${lyC?fmtMetric(lyC[m],m):'—'}</td>
+      ${deltaCell(dly)}${deltaCell(dlw)}${deltaCell(dlm)}
+      <td class="r">${fmtN(cv.items)}</td>
+      <td class="r">${baht(cv.aov)}</td>
+      <td class="r">${cv.cr.toFixed(2)}%</td>
+      <td class="share-bar-cell"><div class="share-bg"><div class="share-fill" style="width:${Math.min(sharePct,100).toFixed(1)}%;background:${col};"></div></div></td>
+    </tr>`;
+
+    /* Products under this category */
+    const catProds=Object.entries(byProd)
+      .filter(([,v])=>v.cat===cat)
+      .sort((a,b)=>b[1][m]-a[1][m]);
+
+    catProds.forEach(([pid,pv])=>{
+      const lyP=lyByProd[pid], lmP=lmByProd[pid];
+      const pdly=getDelta(pv[m],lyP?.[m]), pdlm=getDelta(pv[m],lmP?.[m]);
+      const pName=pv.name||pid;
+      const short=pName.length>36?pName.slice(0,34)+'…':pName;
+      tbody+=`<tr class="prod-row">
+        <td title="${pName}"><span style="font-size:11px;color:var(--t2);">${short}</span></td>
+        <td class="r" style="font-size:11px;">${fmtMetric(pv[m],m)}</td>
+        <td class="r" style="font-size:11px;color:var(--t3);">${lyP?fmtMetric(lyP[m],m):'—'}</td>
+        ${deltaCell(pdly)}<td class="neu">—</td>${deltaCell(pdlm)}
+        <td class="r" style="font-size:11px;">${fmtN(pv.items)}</td>
+        <td class="r" style="font-size:11px;">${baht(pv.aov)}</td>
+        <td class="r" style="font-size:11px;">${pv.cr.toFixed(2)}%</td>
+        <td></td>
+      </tr>`;
+    });
+  });
+
+  const tbodyEl=document.getElementById('perf-tbody');
+  if(tbodyEl) tbodyEl.innerHTML=tbody;
+
+  /* Top products bar */
+  const topProds=Object.entries(byProd).sort((a,b)=>b[1][m]-a[1][m]).slice(0,8);
+  const maxP=topProds[0]?.[1][m]||1;
+  const barTitle=document.getElementById('perf-bar-title');
+  if(barTitle) barTitle.textContent=`Top products by ${m.toUpperCase()}`;
+  const barEl=document.getElementById('perf-bar-list');
+  if(barEl) barEl.innerHTML=topProds.map(([pid,pv])=>{
+    const pct=(pv[m]/maxP*100).toFixed(0);
+    const col=catColor(pv.cat);
+    const nm=(pv.name||pid).length>28?(pv.name||pid).slice(0,26)+'…':(pv.name||pid);
+    return `<div class="prod-bar-item">
+      <span class="prod-bar-name" title="${pv.name||pid}">${nm}</span>
+      <div class="prod-bar-track"><div class="prod-bar-fill" style="width:${pct}%;background:${col};"></div></div>
+      <span class="prod-bar-val">${fmtMetric(pv[m],m)}</span>
+    </div>`;
+  }).join('');
+
+  /* Glance panel */
+  const glanceEl=document.getElementById('perf-glance');
+  if(glanceEl) glanceEl.innerHTML=metrics.map(me=>{
+    const dlm=getDelta(me.val,me.lm);
+    const dc=p=>p===null?'neu':p>0?'pos':p<0?'neg':'neu';
+    const df=p=>p===null?'—':(p>0?'+':'')+p.toFixed(1)+'%';
+    return `<div class="glance-row">
+      <span class="glance-name">${me.label}</span>
+      <div class="glance-vals">
+        <div class="glance-v"><div class="glance-lbl">MTD</div><div class="glance-num">${me.fmt(me.val)}</div></div>
+        <div class="glance-v"><div class="glance-lbl">vs LM</div><div class="glance-num ${dc(dlm)}">${df(dlm)}</div></div>
+        <div class="glance-v"><div class="glance-lbl">vs LY</div><div class="glance-num ${dc(getDelta(me.val,me.ly))}">${df(getDelta(me.val,me.ly))}</div></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
 /* ══ BOOT ══ */
 /* 1. Render embedded data immediately so page is never blank */
 buildFromEmbedded(MONTH_ORDER, '');
 /* 2. Fetch live Google Sheets in background */
 loadGoogleSheet(GS_URL);
- 
+
 </script>
- 
+
 <!-- ══ STYLE PANEL ══ -->
 <button id="style-toggle" onclick="togglePanel()" title="Customise appearance">
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.53 11.53l1.42 1.42M3.05 12.95l1.42-1.42M11.53 4.47l1.42-1.42" stroke-linecap="round"/></svg>
 </button>
- 
+
 <div id="style-panel">
   <div id="sp-header">
     <span id="sp-title">Appearance</span>
@@ -1025,7 +1382,7 @@ loadGoogleSheet(GS_URL);
       <button id="sp-close" onclick="togglePanel()">✕</button>
     </div>
   </div>
- 
+
   <div class="sp-section">Presets</div>
   <div id="sp-presets">
     <button class="preset-btn" onclick="applyPreset('xbloom')">xBloom Black</button>
@@ -1035,26 +1392,26 @@ loadGoogleSheet(GS_URL);
     <button class="preset-btn" onclick="applyPreset('warm')">Warm Sand</button>
     <button class="preset-btn" onclick="applyPreset('ocean')">Ocean</button>
   </div>
- 
+
   <div class="sp-section">Background</div>
   <div class="sp-row"><label>Page background</label><input type="color" id="c-bg" oninput="setVar('--bg',this.value)"/></div>
   <div class="sp-row"><label>Surface 1</label><input type="color" id="c-s1" oninput="setVar('--s1',this.value)"/></div>
   <div class="sp-row"><label>Surface 2</label><input type="color" id="c-s2" oninput="setVar('--s2',this.value)"/></div>
   <div class="sp-row"><label>Surface 3</label><input type="color" id="c-s3" oninput="setVar('--s3',this.value)"/></div>
- 
+
   <div class="sp-section">Text</div>
   <div class="sp-row"><label>Primary text</label><input type="color" id="c-t1" oninput="setVar('--t1',this.value)"/></div>
   <div class="sp-row"><label>Secondary text</label><input type="color" id="c-t2" oninput="setVar('--t2',this.value)"/></div>
   <div class="sp-row"><label>Muted text</label><input type="color" id="c-t3" oninput="setVar('--t3',this.value)"/></div>
- 
+
   <div class="sp-section">Borders</div>
   <div class="sp-row"><label>Border opacity</label><input type="range" id="r-border" min="2" max="40" value="8" oninput="setBorderOpacity(this.value)" style="flex:1"/><span id="border-val" class="sp-val">8%</span></div>
- 
+
   <div class="sp-section">Accent Colors</div>
   <div class="sp-row"><label>Positive / up</label><input type="color" id="c-pos" oninput="setVar('--pos',this.value)"/></div>
   <div class="sp-row"><label>Negative / down</label><input type="color" id="c-neg" oninput="setVar('--neg',this.value)"/></div>
   <div class="sp-row"><label>Highlight</label><input type="color" id="c-accent" oninput="setVar('--accent',this.value)"/></div>
- 
+
   <div class="sp-section">Typography</div>
   <div class="sp-row"><label>Heading font</label>
     <select id="sel-font" onchange="setFont(this.value)" style="flex:1;background:var(--s3);border:1px solid var(--b2);border-radius:4px;padding:4px 6px;color:var(--t1);font-size:11px;outline:none;">
@@ -1075,7 +1432,7 @@ loadGoogleSheet(GS_URL);
       <option value="600">Semibold (600)</option>
     </select>
   </div>
- 
+
   <div class="sp-section">Layout</div>
   <div class="sp-row"><label>Border radius</label><input type="range" id="r-radius" min="0" max="20" value="6" oninput="setRadius(this.value)" style="flex:1"/><span id="radius-val" class="sp-val">6px</span></div>
   <div class="sp-row"><label>Content density</label>
@@ -1085,12 +1442,12 @@ loadGoogleSheet(GS_URL);
       <option value="relaxed">Relaxed</option>
     </select>
   </div>
- 
+
   <div style="margin-top:16px;">
     <button id="sp-copy" onclick="copyCSS()" style="width:100%;padding:8px;background:var(--t1);color:var(--bg);border:none;border-radius:var(--r);font-size:11px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.04em;">Copy theme as CSS</button>
   </div>
 </div>
- 
+
 <style>
 #style-toggle{
   position:fixed;bottom:24px;right:24px;z-index:999;
@@ -1100,7 +1457,7 @@ loadGoogleSheet(GS_URL);
   transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,0.4);
 }
 #style-toggle:hover{background:var(--s3);color:var(--t1);border-color:var(--b3);}
- 
+
 #style-panel{
   position:fixed;top:0;right:-320px;bottom:0;width:300px;z-index:998;
   background:var(--s1);border-left:1px solid var(--b1);
@@ -1109,7 +1466,7 @@ loadGoogleSheet(GS_URL);
   font-family:'DM Sans',sans-serif;
 }
 #style-panel.open{right:0;}
- 
+
 #sp-header{
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 20px 14px;border-bottom:1px solid var(--b1);
@@ -1120,7 +1477,7 @@ loadGoogleSheet(GS_URL);
 #sp-reset:hover{color:var(--t1);border-color:var(--b2);}
 #sp-close{background:transparent;border:none;color:var(--t3);cursor:pointer;font-size:14px;padding:2px 4px;line-height:1;transition:color .15s;}
 #sp-close:hover{color:var(--t1);}
- 
+
 .sp-section{
   padding:14px 20px 6px;
   font-size:9px;font-weight:400;color:var(--t3);
@@ -1137,7 +1494,7 @@ loadGoogleSheet(GS_URL);
   background:none;cursor:pointer;padding:1px;
 }
 .sp-val{font-family:'DM Mono',monospace;font-size:10px;color:var(--t3);min-width:32px;text-align:right;}
- 
+
 #sp-presets{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px 20px 14px;}
 .preset-btn{
   padding:7px 8px;background:var(--s3);border:1px solid var(--b1);
@@ -1145,12 +1502,12 @@ loadGoogleSheet(GS_URL);
   font-family:'DM Sans',sans-serif;transition:all .15s;text-align:center;
 }
 .preset-btn:hover{color:var(--t1);border-color:var(--b2);background:var(--s4);}
- 
+
 /* scrollbar inside panel */
 #style-panel::-webkit-scrollbar{width:3px;}
 #style-panel::-webkit-scrollbar-thumb{background:var(--s5);}
 </style>
- 
+
 <script>
 /* ══ STYLE PANEL ══ */
 const PRESETS = {
@@ -1161,19 +1518,19 @@ const PRESETS = {
   warm:   {bg:'#1a1510',s1:'#201a14',s2:'#281f18',s3:'#30261e',t1:'#f0e8d8',t2:'#a09080',t3:'#605040',pos:'#a8c898',neg:'#d8907a',accent:'#d8c8a8',border:10,radius:8,font:'QuincyCF',weight:'400'},
   ocean:  {bg:'#080c14',s1:'#0c1020',s2:'#101828',s3:'#142030',t1:'#d8e8f8',t2:'#6888a8',t3:'#304858',pos:'#78c8b8',neg:'#d87888',accent:'#88b8d8',border:8,radius:10,font:'QuincyCF',weight:'400'},
 };
- 
+
 let panelOpen = false;
- 
+
 function togglePanel(){
   panelOpen = !panelOpen;
   document.getElementById('style-panel').classList.toggle('open', panelOpen);
 }
- 
+
 function setVar(name, value){
   document.documentElement.style.setProperty(name, value);
   savePref(name, value);
 }
- 
+
 function setBorderOpacity(v){
   const o = v/100;
   document.documentElement.style.setProperty('--b1', `rgba(255,255,255,${o})`);
@@ -1182,7 +1539,7 @@ function setBorderOpacity(v){
   document.getElementById('border-val').textContent = v+'%';
   savePref('--border-op', v);
 }
- 
+
 function setFont(f){
   document.querySelectorAll('.logo-wordmark,.section-title,.card-title,.kpi-val,.donut-mid-val').forEach(el=>{
     el.style.fontFamily = f+',serif';
@@ -1194,33 +1551,33 @@ function setFont(f){
   .logo-wordmark,.section-title,.card-title,.kpi-val,.donut-mid-val,.sp-title{font-family:${f},serif!important;}`;
   savePref('--font', f);
 }
- 
+
 function setFontSize(v){
   document.body.style.fontSize = v+'px';
   document.getElementById('size-val').textContent = v+'px';
   savePref('--font-size', v);
 }
- 
+
 function setHeadingWeight(v){
   let st = document.getElementById('dyn-weight');
   if(!st){st=document.createElement('style');st.id='dyn-weight';document.head.appendChild(st);}
   st.textContent = `.logo-wordmark,.section-title,.card-title,.kpi-val,.donut-mid-val{font-weight:${v}!important;}`;
   savePref('--heading-weight', v);
 }
- 
+
 function setRadius(v){
   document.documentElement.style.setProperty('--r', v+'px');
   document.documentElement.style.setProperty('--rl', (parseInt(v)+2)+'px');
   document.getElementById('radius-val').textContent = v+'px';
   savePref('--radius', v);
 }
- 
+
 function setDensity(d){
   const map={compact:'60px 28px 40px',normal:'80px 36px 60px',relaxed:'90px 48px 80px'};
   document.querySelectorAll('.page').forEach(p=>p.style.padding=map[d]);
   savePref('--density', d);
 }
- 
+
 function applyPreset(name){
   const p = PRESETS[name];
   if(!p) return;
@@ -1232,7 +1589,7 @@ function applyPreset(name){
   syncInputs(p);
   savePref('--preset', name);
 }
- 
+
 function syncInputs(p){
   const map = {bg:'c-bg',s1:'c-s1',s2:'c-s2',s3:'c-s3',t1:'c-t1',t2:'c-t2',t3:'c-t3',pos:'c-pos',neg:'c-neg',accent:'c-accent'};
   Object.entries(map).forEach(([k,id])=>{
@@ -1244,11 +1601,11 @@ function syncInputs(p){
   if(p.font) document.getElementById('sel-font').value=p.font;
   if(p.weight) document.getElementById('sel-weight').value=p.weight;
 }
- 
+
 function resetStyles(){
   applyPreset('xbloom');
 }
- 
+
 function copyCSS(){
   const vars = ['--bg','--s1','--s2','--s3','--t1','--t2','--t3','--pos','--neg','--accent','--b1','--b2','--r','--rl'];
   const root = getComputedStyle(document.documentElement);
@@ -1262,7 +1619,7 @@ function copyCSS(){
     setTimeout(()=>btn.textContent='Copy theme as CSS', 2000);
   });
 }
- 
+
 /* localStorage persistence */
 function savePref(k,v){ try{localStorage.setItem('xb-style-'+k,v);}catch(e){} }
 function loadPrefs(){
@@ -1296,6 +1653,6 @@ function loadPrefs(){
 // Init on load
 document.addEventListener('DOMContentLoaded', loadPrefs);
 </script>
- 
+
 </body>
 </html>
