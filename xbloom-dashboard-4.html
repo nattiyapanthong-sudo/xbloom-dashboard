@@ -14,7 +14,7 @@
   font-weight: 400;
   font-style: normal;
 }
-
+ 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
   --bg:#0b0c0e;
@@ -39,7 +39,7 @@
   --r:10px;--rl:14px;
 }
 html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.5;min-height:100vh;}
-
+ 
 /* ── TOPBAR ── */
 .topbar{
   position:fixed;top:0;left:0;right:0;z-index:100;height:56px;
@@ -50,7 +50,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .logo-wordmark{font-family:'QuincyCF',serif;font-size:17px;font-weight:400;letter-spacing:.02em;color:var(--t1);}
 .logo-pipe{width:1px;height:16px;background:var(--b3);margin:0 4px;}
 .logo-sub{font-size:11px;color:var(--t3);letter-spacing:.04em;text-transform:uppercase;}
-
+ 
 .nav{display:flex;gap:0;border:1px solid var(--b2);border-radius:var(--r);overflow:hidden;}
 .nav-btn{display:flex;align-items:center;gap:6px;padding:6px 18px;font-size:11px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;border:none;background:none;color:var(--t3);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;border-right:1px solid var(--b1);}
 .nav-btn:last-child{border-right:none;}
@@ -58,7 +58,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .nav-btn.active{background:var(--s3);color:var(--t1);}
 .nav-btn.active svg{opacity:.8;}
 .nav-btn:hover:not(.active){color:var(--t2);background:var(--s2);}
-
+ 
 .topbar-right{display:flex;align-items:center;gap:8px;}
 .sync-badge{display:flex;align-items:center;gap:5px;padding:4px 12px;border-radius:20px;font-size:10px;font-weight:400;letter-spacing:.05em;text-transform:uppercase;}
 .sync-badge.live{background:rgba(168,216,168,0.08);color:var(--pos);border:1px solid rgba(168,216,168,0.2);}
@@ -67,7 +67,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .sync-dot{width:4px;height:4px;border-radius:50%;background:currentColor;}
 .sync-badge.live .sync-dot{animation:pulse 2.5s infinite;}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
-
+ 
 .gs-input-wrap{display:flex;gap:6px;align-items:center;}
 .gs-input{background:var(--s2);border:1px solid var(--b1);border-radius:var(--r);padding:5px 10px;font-size:11px;color:var(--t1);font-family:'DM Sans',sans-serif;outline:none;width:240px;}
 .gs-input::placeholder{color:var(--t3);}
@@ -77,11 +77,11 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .btn-upload,.btn-export{display:flex;align-items:center;gap:5px;padding:5px 12px;background:transparent;color:var(--t3);border:1px solid var(--b1);border-radius:var(--r);font-size:11px;letter-spacing:.04em;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;}
 .btn-upload:hover,.btn-export:hover{color:var(--t1);border-color:var(--b2);}
 #file-inp{display:none;}
-
+ 
 /* ── PAGES ── */
 .page{display:none;padding:80px 36px 60px;}
 .page.active{display:block;}
-
+ 
 /* ── SECTION HEADER ── */
 .section-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--b1);flex-wrap:wrap;gap:12px;}
 .section-title{font-family:'QuincyCF',serif;font-size:22px;font-weight:400;color:var(--t1);letter-spacing:-.01em;}
@@ -89,7 +89,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .filter-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
 .fsel{background:transparent;border:1px solid var(--b1);border-radius:var(--r);padding:6px 10px;font-size:11px;color:var(--t2);font-family:'DM Sans',sans-serif;outline:none;cursor:pointer;letter-spacing:.03em;}
 .fsel:focus{border-color:var(--b2);}
-
+ 
 /* ── KPI GRID ── */
 .kpi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;margin-bottom:28px;border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;}
 .kpi{
@@ -108,7 +108,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .kpi-comp-lbl{font-size:8px;color:var(--t3);font-weight:400;letter-spacing:.08em;text-transform:uppercase;}
 .kpi-comp-val{font-size:10px;font-weight:400;font-family:'DM Mono',monospace;}
 .pos{color:var(--pos);}.neg{color:var(--neg);}.neu{color:var(--t2);}
-
+ 
 /* ── CHARTS ── */
 .charts-row{display:grid;grid-template-columns:1fr 300px;gap:14px;margin-bottom:14px;}
 .card{background:var(--s2);border:1px solid var(--b1);border-radius:var(--rl);padding:24px;min-height:0;}
@@ -117,7 +117,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .legend{display:flex;gap:14px;font-size:10px;color:var(--t3);letter-spacing:.04em;}
 .leg{display:flex;align-items:center;gap:5px;}
 .leg-sq{width:6px;height:6px;border-radius:1px;}
-
+ 
 /* DONUT */
 .donut-wrap{display:flex;align-items:center;gap:20px;padding-top:4px;}
 .donut-c{position:relative;width:130px;height:130px;flex-shrink:0;}
@@ -129,7 +129,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .dl-sw{width:8px;height:8px;border-radius:1px;flex-shrink:0;}
 .dl-name{color:var(--t2);flex:1;font-size:11px;}
 .dl-pct{font-family:'DM Mono',monospace;font-weight:400;color:var(--t1);font-size:10px;}
-
+ 
 /* ── BOTTOM GRID ── */
 .bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
 .bar-rows{display:flex;flex-direction:column;gap:14px;}
@@ -139,7 +139,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .bar-val{font-family:'DM Mono',monospace;font-weight:400;color:var(--t1);}
 .bar-bg{height:1px;background:var(--b1);overflow:visible;position:relative;}
 .bar-fill{height:3px;border-radius:0;margin-top:-1px;transition:width .9s cubic-bezier(.23,1,.32,1);background:var(--accent);}
-
+ 
 .prod-list{display:flex;flex-direction:column;gap:0;}
 .prod-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--b1);transition:opacity .15s;}
 .prod-row:last-child{border-bottom:none;}
@@ -152,7 +152,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;
 .mini-bg{width:36px;height:1px;background:var(--b2);overflow:visible;position:relative;}
 .mini-fill{height:2px;margin-top:-0.5px;background:var(--accent);transition:width .8s cubic-bezier(.23,1,.32,1);}
 .prod-val{font-family:'DM Mono',monospace;font-size:11px;font-weight:400;color:var(--t1);min-width:54px;text-align:right;}
-
+ 
 /* ── RAW TABLE ── */
 .data-ctrl{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
 .search{flex:1;min-width:180px;background:transparent;border:1px solid var(--b1);border-radius:var(--r);padding:7px 12px 7px 32px;font-size:12px;color:var(--t1);font-family:'DM Sans',sans-serif;outline:none;background-image:url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5.5' cy='5.5' r='3.5' stroke='%234a4845' stroke-width='1.3'/%3E%3Cpath d='M8.5 8.5l2.5 2.5' stroke='%234a4845' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:10px center;}
@@ -177,24 +177,24 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
 .cat-acc{background:rgba(94,176,245,.12);color:#7ec5f8;border:none;}
 .cat-xpod{background:rgba(184,240,96,.12);color:#c4f07a;border:none;}
 .cat-other{background:var(--s4);color:var(--t2);border:none;}
-
+ 
 .pagi{display:flex;align-items:center;justify-content:space-between;padding:14px 0 0;font-size:11px;color:var(--t3);}
 .pagi-btns{display:flex;gap:4px;}
 .pb{width:28px;height:28px;border-radius:var(--r);border:1px solid var(--b1);background:none;color:var(--t3);cursor:pointer;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;transition:all .15s;}
 .pb:hover{border-color:var(--b2);color:var(--t1);}
 .pb.active{background:var(--pos);color:#0b0c0e;border-color:var(--pos);font-weight:600;}
 .pb:disabled{opacity:.2;cursor:default;}
-
+ 
 @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fadeUp .4s ease both;}
 ::-webkit-scrollbar{width:3px;height:3px;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:var(--s5);border-radius:2px;}
-
+ 
 /* ── RESPONSIVE ── */
 @media(max-width:1200px){.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr));}.charts-row{grid-template-columns:1fr;}.bottom-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:900px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.bottom-grid{grid-template-columns:1fr;}.topbar{flex-wrap:wrap;height:auto;padding:12px 20px;gap:10px;}.page{padding:110px 20px 40px;}.gs-input{width:160px;}}
-
+ 
 /* ── DATE BAR ── */
 #date-bar{
   display:flex;align-items:flex-start;justify-content:space-between;
@@ -205,7 +205,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
 }
 #date-bar-left{display:flex;flex-direction:column;gap:10px;}
 #date-bar-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
-
+ 
 #period-chips{display:flex;gap:6px;flex-wrap:wrap;}
 .period-chip{
   padding:5px 14px;font-size:11px;font-weight:400;
@@ -219,7 +219,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
   background:var(--pos);color:#0b0c0e;
   border-color:var(--pos);font-weight:500;
 }
-
+ 
 #custom-range{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
 .date-input-wrap{display:flex;align-items:center;gap:6px;}
 .date-input-wrap label{font-size:10px;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;}
@@ -228,7 +228,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
   padding:4px 8px;font-size:11px;color:var(--t1);
   font-family:'DM Sans',sans-serif;outline:none;cursor:pointer;
 }
-
+ 
 /* Compare toggle */
 #compare-toggle-wrap{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--t2);}
 .toggle-label{display:flex;align-items:center;gap:7px;cursor:pointer;user-select:none;}
@@ -254,14 +254,14 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
   opacity:.4;transition:opacity .2s;
 }
 #compare-period:not([disabled]){opacity:1;}
-
+ 
 #selected-range-label{
   font-size:11px;color:var(--t3);
   font-family:'DM Mono',monospace;
   padding:4px 10px;background:var(--s3);border-radius:4px;
   border:1px solid var(--b1);white-space:nowrap;
 }
-
+ 
 /* KPI delta badges */
 .kpi-delta{
   display:inline-flex;align-items:center;gap:3px;
@@ -271,11 +271,11 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
 .kpi-delta.pos{background:rgba(184,240,96,.12);color:var(--pos);}
 .kpi-delta.neg{background:rgba(245,96,94,.12);color:var(--neg);}
 .kpi-delta.neu{background:var(--s4);color:var(--t3);}
-
+ 
 </style>
 </head>
 <body>
-
+ 
 <!-- ══ TOPBAR ══ -->
 <header class="topbar">
   <div class="logo">
@@ -283,7 +283,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     <span class="logo-pipe"></span>
     <span class="logo-sub">Shopee &middot; 2026</span>
   </div>
-
+ 
   <div class="nav">
     <button class="nav-btn active" onclick="go('summary')" id="tab-summary">
       <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1" y="6" width="2.5" height="5" rx=".6"/><rect x="4.8" y="3.5" width="2.5" height="7.5" rx=".6"/><rect x="8.5" y="1" width="2.5" height="10" rx=".6"/></svg>
@@ -294,7 +294,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       Raw Data
     </button>
   </div>
-
+ 
   <div class="topbar-right">
     <div class="sync-badge live" id="sync-badge">
       <span class="sync-dot"></span>
@@ -315,10 +315,10 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     </button>
   </div>
 </header>
-
+ 
 <!-- ══ SUMMARY PAGE ══ -->
 <div class="page active fade" id="page-summary">
-
+ 
   <div class="section-hdr">
     <div>
       <div class="section-title">Executive Overview — Shopee</div>
@@ -333,7 +333,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       </select>
     </div>
   </div>
-
+ 
   <!-- DATE RANGE SELECTOR -->
   <div id="date-bar">
     <div id="date-bar-left">
@@ -384,71 +384,47 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       <div id="selected-range-label"></div>
     </div>
   </div>
-
+ 
   <!-- KPI CARDS -->
   <div class="kpi-grid">
     <div class="kpi" style="--accent:var(--green)">
       <div class="kpi-lbl">GMV</div>
       <svg class="kpi-spark" width="50" height="22" viewBox="0 0 50 22"><polyline id="sp-gmv" fill="none" stroke="#b8f060" stroke-width="1.4" stroke-linejoin="round" points="0,18 25,10 50,4"/></svg>
       <div class="kpi-val" id="kv-gmv">฿2.24M</div>
-      <div class="kpi-comps">
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Dec'25</div><div class="kpi-comp-val neu">฿41.6k</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Jan</div><div class="kpi-comp-val pos">฿113.9k</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Feb</div><div class="kpi-comp-val pos">฿786.8k</div></div>
-      </div>
+      <div class="kpi-comps" id="kpi-comps-gmv"></div>
     </div>
     <div class="kpi" style="--accent:var(--blue)">
       <div class="kpi-lbl">Visitors</div>
       <svg class="kpi-spark" width="50" height="22" viewBox="0 0 50 22"><polyline id="sp-vis" fill="none" stroke="#5eb0f5" stroke-width="1.4" stroke-linejoin="round" points="0,18 25,12 50,6"/></svg>
       <div class="kpi-val" id="kv-vis">13,880</div>
-      <div class="kpi-comps">
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Dec'25</div><div class="kpi-comp-val neu">1,465</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Jan</div><div class="kpi-comp-val pos">891</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Feb</div><div class="kpi-comp-val pos">5,170</div></div>
-      </div>
+      <div class="kpi-comps" id="kpi-comps-vis"></div>
     </div>
     <div class="kpi" style="--accent:var(--blue)">
       <div class="kpi-lbl">Page Views</div>
       <svg class="kpi-spark" width="50" height="22" viewBox="0 0 50 22"><polyline id="sp-pv" fill="none" stroke="#5eb0f5" stroke-width="1.4" stroke-linejoin="round" points="0,18 25,11 50,5"/></svg>
       <div class="kpi-val" id="kv-pv">23,154</div>
-      <div class="kpi-comps">
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Dec'25</div><div class="kpi-comp-val neu">2,503</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Jan</div><div class="kpi-comp-val pos">1,575</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Feb</div><div class="kpi-comp-val pos">8,681</div></div>
-      </div>
+      <div class="kpi-comps" id="kpi-comps-pv"></div>
     </div>
     <div class="kpi" style="--accent:var(--teal)">
       <div class="kpi-lbl">Items Sold</div>
       <svg class="kpi-spark" width="50" height="22" viewBox="0 0 50 22"><polyline id="sp-items" fill="none" stroke="#4ecfb0" stroke-width="1.4" stroke-linejoin="round" points="0,16 25,11 50,6"/></svg>
       <div class="kpi-val" id="kv-items">474</div>
-      <div class="kpi-comps">
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Dec'25</div><div class="kpi-comp-val neu">78</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Jan</div><div class="kpi-comp-val pos">65</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Feb</div><div class="kpi-comp-val pos">189</div></div>
-      </div>
+      <div class="kpi-comps" id="kpi-comps-items"></div>
     </div>
     <div class="kpi" style="--accent:var(--amber)">
       <div class="kpi-lbl">Avg. AOV</div>
       <svg class="kpi-spark" width="50" height="22" viewBox="0 0 50 22"><polyline id="sp-aov" fill="none" stroke="#f5c45e" stroke-width="1.4" stroke-linejoin="round" points="0,16 25,10 50,5"/></svg>
       <div class="kpi-val" id="kv-aov">฿5,071</div>
-      <div class="kpi-comps">
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Dec'25</div><div class="kpi-comp-val neu">฿743</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Jan</div><div class="kpi-comp-val pos">฿2,924</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Feb</div><div class="kpi-comp-val pos">฿5,109</div></div>
-      </div>
+      <div class="kpi-comps" id="kpi-comps-aov"></div>
     </div>
     <div class="kpi" style="--accent:var(--red)">
       <div class="kpi-lbl">Conv. Rate</div>
       <svg class="kpi-spark" width="50" height="22" viewBox="0 0 50 22"><polyline id="sp-cr" fill="none" stroke="#f5605e" stroke-width="1.4" stroke-linejoin="round" points="0,4 25,11 50,16"/></svg>
       <div class="kpi-val" id="kv-cr">22.88%</div>
-      <div class="kpi-comps">
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Dec'25</div><div class="kpi-comp-val pos">31.78%</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Jan</div><div class="kpi-comp-val pos">43.67%</div></div>
-        <div class="kpi-comp"><div class="kpi-comp-lbl">Feb</div><div class="kpi-comp-val neg">22.54%</div></div>
-      </div>
+      <div class="kpi-comps" id="kpi-comps-cr"></div>
     </div>
   </div>
-
+ 
   <!-- CHARTS ROW -->
   <div class="charts-row">
     <div class="card">
@@ -475,7 +451,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
       </div>
     </div>
   </div>
-
+ 
   <!-- BOTTOM GRID -->
   <div class="bottom-grid">
     <div class="card">
@@ -492,7 +468,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     </div>
   </div>
 </div>
-
+ 
 <!-- ══ RAW DATA PAGE ══ -->
 <div class="page fade" id="page-raw">
   <div class="data-ctrl">
@@ -536,7 +512,7 @@ td{padding:9px 14px;color:var(--t2);white-space:nowrap;}
     <div class="pagi-btns" id="pagi-btns"></div>
   </div>
 </div>
-
+ 
 <script>
 /* ══════════════════════════════════════
    EMBEDDED DATA — your real CSV data
@@ -567,14 +543,14 @@ const EMBEDDED = {
     {name:"Replacement Drip Tray",gmv:3946,items:6,cat:"accessories"}
   ]
 };
-
+ 
 /* ══ GOOGLE SHEETS ══ */
 const GS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTs2RCqN1FbdV8-KM1T2p1o07iGyYtMPuLFofmXmjNBnpQP9ZSSWpTQeVCNEcZElJS5ub5OGUjeajBr/pub?output=csv";
 const CORS_PROXIES = [
   u=>`https://corsproxy.io/?${encodeURIComponent(u)}`,
   u=>`https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
 ];
-
+ 
 /* ══ STATE ══ */
 let allRows=[], sortCol='date', sortDir=-1, curPage=1;
 const PS=50;
@@ -585,12 +561,12 @@ const MONTH_LABEL={
   "2026-02":"Feb 2026","2026-03":"Mar 2026"
 };
 const MONTH_ORDER=["2025-12","2026-01","2026-02","2026-03"];
-
+ 
 /* Date filter state */
 let activePeriod='all';
 let rangeFrom='2025-12', rangeTo='2026-03';
 let compareMode=false, comparePeriod='2025-12';
-
+ 
 /* ══ PAGE SWITCH ══ */
 function go(name){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -599,19 +575,19 @@ function go(name){
   document.getElementById('tab-'+name).classList.add('active');
   if(name==='raw') renderTable();
 }
-
+ 
 /* ══ SYNC BADGE ══ */
 function setSync(s,msg){
   const b=document.getElementById('sync-badge');
   b.className='sync-badge '+s;
   document.getElementById('sync-txt').textContent=msg;
 }
-
+ 
 /* ══ FORMAT ══ */
 const baht=n=>{if(n>=1e6)return '฿'+(n/1e6).toFixed(2)+'M';if(n>=1e3)return '฿'+(n/1e3).toFixed(1)+'k';return '฿'+Math.round(n).toLocaleString();};
 const fmtN=n=>n>=1e3?(n/1e3).toFixed(1)+'k':Math.round(n).toLocaleString();
 function toN(v){try{const s=String(v).replace(/[^0-9.\-]/g,'');return parseFloat(s)||0;}catch{return 0;}}
-
+ 
 /* ══ DATE PERIOD ══ */
 function getSelectedMonths(){
   if(activePeriod==='all') return MONTH_ORDER.slice();
@@ -622,7 +598,7 @@ function getSelectedMonths(){
   }
   return [activePeriod];
 }
-
+ 
 function setPeriod(p){
   activePeriod=p;
   document.querySelectorAll('.period-chip').forEach(c=>c.classList.remove('active'));
@@ -632,33 +608,33 @@ function setPeriod(p){
   if(cr) cr.style.display=p==='custom'?'flex':'none';
   applyFilter();
 }
-
+ 
 function applyCustomRange(){
   rangeFrom=document.getElementById('range-from').value;
   rangeTo=document.getElementById('range-to').value;
   applyFilter();
 }
-
+ 
 function toggleCompare(on){
   compareMode=on;
   const sel=document.getElementById('compare-period');
   if(sel) sel.disabled=!on;
   applyFilter();
 }
-
+ 
 /* ══ MAIN FILTER ══ */
 function applyFilter(){
   const months=getSelectedMonths();
   comparePeriod=document.getElementById('compare-period')?.value||'2025-12';
   const cf=document.getElementById('f-cat')?.value||'';
-
+ 
   /* Update range label */
   const label=months.length===1
     ?(MONTH_LABEL[months[0]]||months[0])
     :`${MONTH_LABEL[months[0]]||months[0]} → ${MONTH_LABEL[months[months.length-1]]||months[months.length-1]}`;
   const rl=document.getElementById('selected-range-label');
   if(rl) rl.textContent=label;
-
+ 
   if(allRows.length){
     const rows=allRows.filter(r=>months.includes(r.month)&&(!cf||r.category===cf));
     const crows=compareMode?allRows.filter(r=>r.month===comparePeriod&&(!cf||r.category===cf)):null;
@@ -667,7 +643,7 @@ function applyFilter(){
     buildFromEmbedded(months, cf);
   }
 }
-
+ 
 /* ══ BUILD FROM EMBEDDED ══ */
 function buildFromEmbedded(months, catFilter){
   const D=EMBEDDED;
@@ -691,7 +667,7 @@ function buildFromEmbedded(months, catFilter){
   if(catFilter) prods=prods.filter(p=>p.cat===catFilter);
   renderDashboard({totals,months:filtMonths,categories:cats,top_products:prods}, compTotals);
 }
-
+ 
 /* ══ BUILD FROM LIVE ROWS ══ */
 function buildAndRender(rows, compRows){
   function agg(rr){
@@ -729,11 +705,11 @@ function buildAndRender(rows, compRows){
   }
   renderDashboard(data, compTotals);
 }
-
+ 
 /* ══ RENDER DASHBOARD ══ */
 function renderDashboard(data, compTotals){
   const t=data.totals;
-
+ 
   /* Delta badge */
   function dtag(curr,prev){
     if(prev==null||prev===0) return '';
@@ -741,7 +717,7 @@ function renderDashboard(data, compTotals){
     const cls=p>0?'pos':p<0?'neg':'neu';
     return `<span class="kpi-delta ${cls}">${p>0?'↑':'↓'}${Math.abs(p).toFixed(1)}%</span>`;
   }
-
+ 
   /* KPI values */
   document.getElementById('kv-gmv').innerHTML   = baht(t.gmv)          +(compTotals?dtag(t.gmv,   compTotals.gmv):'');
   document.getElementById('kv-vis').innerHTML   = fmtN(t.vis)          +(compTotals?dtag(t.vis,   compTotals.vis):'');
@@ -749,10 +725,10 @@ function renderDashboard(data, compTotals){
   document.getElementById('kv-items').innerHTML = fmtN(t.items)        +(compTotals?dtag(t.items, compTotals.items):'');
   document.getElementById('kv-aov').innerHTML   = baht(t.aov)          +(compTotals?dtag(t.aov,   compTotals.aov):'');
   document.getElementById('kv-cr').innerHTML    = t.cr.toFixed(2)+'%'  +(compTotals?dtag(t.cr,    compTotals.cr):'');
-
+ 
   /* Donut center */
   document.getElementById('donut-val').textContent=baht(t.gmv);
-
+ 
   /* Month keys sorted */
   const mKeys=Object.keys(data.months).sort();
   const mLabels=mKeys.map(k=>data.months[k].label||MONTH_LABEL[k]||k);
@@ -760,7 +736,7 @@ function renderDashboard(data, compTotals){
   const mItems=mKeys.map(k=>data.months[k].items);
   const mVis  =mKeys.map(k=>data.months[k].vis);
   const mAOV  =mKeys.map(k=>data.months[k].aov);
-
+ 
   /* Sparklines */
   function spark(id,vals,stroke){
     const el=document.getElementById(id); if(!el||vals.length<2) return;
@@ -776,7 +752,29 @@ function renderDashboard(data, compTotals){
   spark('sp-vis',  mVis,  '#5eb0f5');
   spark('sp-items',mItems,'#4ecfb0');
   spark('sp-aov',  mAOV,  '#f5c45e');
-
+ 
+  /* ── KPI MONTH BREAKDOWNS (dynamic) ── */
+  function renderKPIComps(id, vals, fmt){
+    const el=document.getElementById('kpi-comps-'+id);
+    if(!el) return;
+    // Show up to 3 most recent months
+    const show=mKeys.slice(-3);
+    el.innerHTML=show.map((k,i)=>{
+      const v=vals[mKeys.indexOf(k)];
+      const lbl=mLabels[mKeys.indexOf(k)].replace(' 2025','').replace(' 2026','');
+      // colour: compare to previous shown value
+      const prev=i>0?vals[mKeys.indexOf(show[i-1])]:null;
+      const cls=prev===null?'neu':v>prev?'pos':v<prev?'neg':'neu';
+      return `<div class="kpi-comp"><div class="kpi-comp-lbl">${lbl}</div><div class="kpi-comp-val ${cls}">${fmt(v)}</div></div>`;
+    }).join('');
+  }
+  renderKPIComps('gmv',  mGMV,   v=>baht(v));
+  renderKPIComps('vis',  mVis,   v=>fmtN(v));
+  renderKPIComps('pv',   mKeys.map(k=>data.months[k].pv),   v=>fmtN(v));
+  renderKPIComps('items',mItems, v=>fmtN(v));
+  renderKPIComps('aov',  mAOV,   v=>baht(v));
+  renderKPIComps('cr',   mKeys.map(k=>data.months[k].cr),   v=>v.toFixed(2)+'%');
+ 
   /* ── GMV CHART ── */
   const gmvDatasets=[
     {label:'GMV',  data:mGMV,  backgroundColor:'rgba(184,240,96,0.7)',borderRadius:4,yAxisID:'y',type:'bar'},
@@ -797,7 +795,7 @@ function renderDashboard(data, compTotals){
       }
     }
   });
-
+ 
   /* ── DONUT CHART ── */
   const catE=Object.entries(data.categories).sort((a,b)=>b[1].gmv-a[1].gmv);
   const catTotal=catE.reduce((s,e)=>s+e[1].gmv,0);
@@ -810,7 +808,7 @@ function renderDashboard(data, compTotals){
   document.getElementById('donut-leg').innerHTML=catE.map((e,i)=>
     `<div class="dl"><div class="dl-sw" style="background:${CAT_COLORS[i%CAT_COLORS.length]};"></div><span class="dl-name">${e[0]}</span><span class="dl-pct">${catTotal?((e[1].gmv/catTotal)*100).toFixed(0):0}%</span></div>`
   ).join('');
-
+ 
   /* ── METRICS CHART ── */
   if(metricsChart){metricsChart.destroy();metricsChart=null;}
   metricsChart=new Chart(document.getElementById('metricsChart'),{
@@ -830,13 +828,13 @@ function renderDashboard(data, compTotals){
       }
     }
   });
-
+ 
   /* ── MONTHLY BARS ── */
   const maxG=Math.max(...mGMV,1);
   document.getElementById('month-bars').innerHTML=mKeys.map((k,i)=>
     `<div class="bar-row"><div class="bar-meta"><span class="bar-label">${mLabels[i]}</span><span class="bar-val">${baht(mGMV[i])}</span></div><div class="bar-bg"><div class="bar-fill" style="width:${(mGMV[i]/maxG*100).toFixed(1)}%;background:var(--pos);"></div></div></div>`
   ).join('');
-
+ 
   /* ── TOP PRODUCTS ── */
   const maxP=data.top_products[0]?.gmv||1;
   const catBadge=c=>({XBloom_Studio:'cat-studio',accessories:'cat-acc','xPod and beans':'cat-xpod'}[c]||'cat-other');
@@ -844,7 +842,7 @@ function renderDashboard(data, compTotals){
     `<div class="prod-row"><span class="prod-rank">${i+1}</span><div class="prod-info"><div class="prod-name" title="${p.name}">${p.name.length>32?p.name.slice(0,30)+'…':p.name}</div><div class="prod-cat">${p.cat}</div></div><div class="prod-right"><div class="mini-bg"><div class="mini-fill" style="width:${(p.gmv/maxP*100).toFixed(0)}%;background:var(--pos);"></div></div><span class="prod-val">${baht(p.gmv)}</span></div></div>`
   ).join('');
 }
-
+ 
 /* ══ GOOGLE SHEETS FETCH ══ */
 async function loadGoogleSheet(url, isRefresh=false){
   setSync('loading', isRefresh?'Refreshing…':'Connecting to Google Sheets…');
@@ -865,12 +863,12 @@ async function loadGoogleSheet(url, isRefresh=false){
   }
   setSync('err','Could not reach Google Sheets — showing cached data');
 }
-
+ 
 function connectGS(){
   const u=document.getElementById('gs-url').value.trim()||GS_URL;
   loadGoogleSheet(u);
 }
-
+ 
 /* ══ PROCESS CSV ══ */
 function processCSV(raw){
   allRows=raw.map(r=>{
@@ -900,7 +898,7 @@ function processCSV(raw){
     const yr=parseInt(r.month.split('-')[0]);
     return yr>=2025&&yr<=2030;
   });
-
+ 
   /* Update MONTH_ORDER and MONTH_LABEL from actual data */
   const uniqueMonths=[...new Set(allRows.map(r=>r.month).filter(Boolean))].sort();
   MONTH_ORDER.length=0;
@@ -912,7 +910,7 @@ function processCSV(raw){
       MONTH_LABEL[m]=(names[parseInt(mn)]||mn)+' '+yr;
     }
   });
-
+ 
   /* Rebuild period chips */
   const chips=document.getElementById('period-chips');
   if(chips){
@@ -920,7 +918,7 @@ function processCSV(raw){
       +uniqueMonths.map(m=>`<button class="period-chip" onclick="setPeriod('${m}')" id="chip-${m}">${MONTH_LABEL[m]}</button>`).join('')
       +`<button class="period-chip" onclick="setPeriod('custom')" id="chip-custom">Custom range</button>`;
   }
-
+ 
   /* Rebuild dropdowns */
   const opts=uniqueMonths.map(m=>`<option value="${m}">${MONTH_LABEL[m]}</option>`).join('');
   ['range-from','range-to','compare-period','rf-month'].forEach(id=>{
@@ -930,20 +928,20 @@ function processCSV(raw){
       el.innerHTML=prefix+opts;
     }
   });
-
+ 
   /* Rebuild category filter */
   const cats=[...new Set(allRows.map(r=>r.category).filter(c=>c&&c!=='#N/A'))].sort();
   ['f-cat','rf-cat'].forEach(id=>{
     const el=document.getElementById(id);
     if(el) el.innerHTML='<option value="">All Categories</option>'+cats.map(c=>`<option value="${c}">${c}</option>`).join('');
   });
-
+ 
   document.getElementById('meta-line').textContent=`${allRows.length.toLocaleString()} records · live from Google Sheets`;
   activePeriod='all';
   applyFilter();
   renderTable();
 }
-
+ 
 /* ══ FILE UPLOAD ══ */
 function handleUpload(e){
   const f=e.target.files[0]; if(!f) return;
@@ -953,7 +951,7 @@ function handleUpload(e){
     setSync('live',f.name+' · uploaded');
   },error:()=>setSync('err','Parse error')});
 }
-
+ 
 /* ══ RAW TABLE ══ */
 function renderTable(){
   const srch=document.getElementById('srch')?.value.toLowerCase()||'';
@@ -998,27 +996,27 @@ function renderTable(){
 }
 function goPg(p){curPage=p;renderTable();}
 function srt(c){if(sortCol===c)sortDir*=-1;else{sortCol=c;sortDir=-1;}curPage=1;renderTable();}
-
+ 
 function exportCSV(){
   if(!allRows.length){alert('No live data.');return;}
   const h='Date,Category,Product,GMV,Visitors,Page Views,Items Sold,AOV,CR%';
   const b=allRows.map(r=>[r.date,`"${r.category}"`,`"${r.product}"`,r.gmv,r.visitors,r.pageViews,r.itemSold,r.aov,r.cr].join(',')).join('\n');
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([h+'\n'+b],{type:'text/csv'}));a.download=`xbloom-${new Date().toISOString().split('T')[0]}.csv`;a.click();
 }
-
+ 
 /* ══ BOOT ══ */
 /* 1. Render embedded data immediately so page is never blank */
 buildFromEmbedded(MONTH_ORDER, '');
 /* 2. Fetch live Google Sheets in background */
 loadGoogleSheet(GS_URL);
-
+ 
 </script>
-
+ 
 <!-- ══ STYLE PANEL ══ -->
 <button id="style-toggle" onclick="togglePanel()" title="Customise appearance">
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.42 1.42M11.53 11.53l1.42 1.42M3.05 12.95l1.42-1.42M11.53 4.47l1.42-1.42" stroke-linecap="round"/></svg>
 </button>
-
+ 
 <div id="style-panel">
   <div id="sp-header">
     <span id="sp-title">Appearance</span>
@@ -1027,7 +1025,7 @@ loadGoogleSheet(GS_URL);
       <button id="sp-close" onclick="togglePanel()">✕</button>
     </div>
   </div>
-
+ 
   <div class="sp-section">Presets</div>
   <div id="sp-presets">
     <button class="preset-btn" onclick="applyPreset('xbloom')">xBloom Black</button>
@@ -1037,26 +1035,26 @@ loadGoogleSheet(GS_URL);
     <button class="preset-btn" onclick="applyPreset('warm')">Warm Sand</button>
     <button class="preset-btn" onclick="applyPreset('ocean')">Ocean</button>
   </div>
-
+ 
   <div class="sp-section">Background</div>
   <div class="sp-row"><label>Page background</label><input type="color" id="c-bg" oninput="setVar('--bg',this.value)"/></div>
   <div class="sp-row"><label>Surface 1</label><input type="color" id="c-s1" oninput="setVar('--s1',this.value)"/></div>
   <div class="sp-row"><label>Surface 2</label><input type="color" id="c-s2" oninput="setVar('--s2',this.value)"/></div>
   <div class="sp-row"><label>Surface 3</label><input type="color" id="c-s3" oninput="setVar('--s3',this.value)"/></div>
-
+ 
   <div class="sp-section">Text</div>
   <div class="sp-row"><label>Primary text</label><input type="color" id="c-t1" oninput="setVar('--t1',this.value)"/></div>
   <div class="sp-row"><label>Secondary text</label><input type="color" id="c-t2" oninput="setVar('--t2',this.value)"/></div>
   <div class="sp-row"><label>Muted text</label><input type="color" id="c-t3" oninput="setVar('--t3',this.value)"/></div>
-
+ 
   <div class="sp-section">Borders</div>
   <div class="sp-row"><label>Border opacity</label><input type="range" id="r-border" min="2" max="40" value="8" oninput="setBorderOpacity(this.value)" style="flex:1"/><span id="border-val" class="sp-val">8%</span></div>
-
+ 
   <div class="sp-section">Accent Colors</div>
   <div class="sp-row"><label>Positive / up</label><input type="color" id="c-pos" oninput="setVar('--pos',this.value)"/></div>
   <div class="sp-row"><label>Negative / down</label><input type="color" id="c-neg" oninput="setVar('--neg',this.value)"/></div>
   <div class="sp-row"><label>Highlight</label><input type="color" id="c-accent" oninput="setVar('--accent',this.value)"/></div>
-
+ 
   <div class="sp-section">Typography</div>
   <div class="sp-row"><label>Heading font</label>
     <select id="sel-font" onchange="setFont(this.value)" style="flex:1;background:var(--s3);border:1px solid var(--b2);border-radius:4px;padding:4px 6px;color:var(--t1);font-size:11px;outline:none;">
@@ -1077,7 +1075,7 @@ loadGoogleSheet(GS_URL);
       <option value="600">Semibold (600)</option>
     </select>
   </div>
-
+ 
   <div class="sp-section">Layout</div>
   <div class="sp-row"><label>Border radius</label><input type="range" id="r-radius" min="0" max="20" value="6" oninput="setRadius(this.value)" style="flex:1"/><span id="radius-val" class="sp-val">6px</span></div>
   <div class="sp-row"><label>Content density</label>
@@ -1087,12 +1085,12 @@ loadGoogleSheet(GS_URL);
       <option value="relaxed">Relaxed</option>
     </select>
   </div>
-
+ 
   <div style="margin-top:16px;">
     <button id="sp-copy" onclick="copyCSS()" style="width:100%;padding:8px;background:var(--t1);color:var(--bg);border:none;border-radius:var(--r);font-size:11px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.04em;">Copy theme as CSS</button>
   </div>
 </div>
-
+ 
 <style>
 #style-toggle{
   position:fixed;bottom:24px;right:24px;z-index:999;
@@ -1102,7 +1100,7 @@ loadGoogleSheet(GS_URL);
   transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,0.4);
 }
 #style-toggle:hover{background:var(--s3);color:var(--t1);border-color:var(--b3);}
-
+ 
 #style-panel{
   position:fixed;top:0;right:-320px;bottom:0;width:300px;z-index:998;
   background:var(--s1);border-left:1px solid var(--b1);
@@ -1111,7 +1109,7 @@ loadGoogleSheet(GS_URL);
   font-family:'DM Sans',sans-serif;
 }
 #style-panel.open{right:0;}
-
+ 
 #sp-header{
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 20px 14px;border-bottom:1px solid var(--b1);
@@ -1122,7 +1120,7 @@ loadGoogleSheet(GS_URL);
 #sp-reset:hover{color:var(--t1);border-color:var(--b2);}
 #sp-close{background:transparent;border:none;color:var(--t3);cursor:pointer;font-size:14px;padding:2px 4px;line-height:1;transition:color .15s;}
 #sp-close:hover{color:var(--t1);}
-
+ 
 .sp-section{
   padding:14px 20px 6px;
   font-size:9px;font-weight:400;color:var(--t3);
@@ -1139,7 +1137,7 @@ loadGoogleSheet(GS_URL);
   background:none;cursor:pointer;padding:1px;
 }
 .sp-val{font-family:'DM Mono',monospace;font-size:10px;color:var(--t3);min-width:32px;text-align:right;}
-
+ 
 #sp-presets{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px 20px 14px;}
 .preset-btn{
   padding:7px 8px;background:var(--s3);border:1px solid var(--b1);
@@ -1147,12 +1145,12 @@ loadGoogleSheet(GS_URL);
   font-family:'DM Sans',sans-serif;transition:all .15s;text-align:center;
 }
 .preset-btn:hover{color:var(--t1);border-color:var(--b2);background:var(--s4);}
-
+ 
 /* scrollbar inside panel */
 #style-panel::-webkit-scrollbar{width:3px;}
 #style-panel::-webkit-scrollbar-thumb{background:var(--s5);}
 </style>
-
+ 
 <script>
 /* ══ STYLE PANEL ══ */
 const PRESETS = {
@@ -1163,19 +1161,19 @@ const PRESETS = {
   warm:   {bg:'#1a1510',s1:'#201a14',s2:'#281f18',s3:'#30261e',t1:'#f0e8d8',t2:'#a09080',t3:'#605040',pos:'#a8c898',neg:'#d8907a',accent:'#d8c8a8',border:10,radius:8,font:'QuincyCF',weight:'400'},
   ocean:  {bg:'#080c14',s1:'#0c1020',s2:'#101828',s3:'#142030',t1:'#d8e8f8',t2:'#6888a8',t3:'#304858',pos:'#78c8b8',neg:'#d87888',accent:'#88b8d8',border:8,radius:10,font:'QuincyCF',weight:'400'},
 };
-
+ 
 let panelOpen = false;
-
+ 
 function togglePanel(){
   panelOpen = !panelOpen;
   document.getElementById('style-panel').classList.toggle('open', panelOpen);
 }
-
+ 
 function setVar(name, value){
   document.documentElement.style.setProperty(name, value);
   savePref(name, value);
 }
-
+ 
 function setBorderOpacity(v){
   const o = v/100;
   document.documentElement.style.setProperty('--b1', `rgba(255,255,255,${o})`);
@@ -1184,7 +1182,7 @@ function setBorderOpacity(v){
   document.getElementById('border-val').textContent = v+'%';
   savePref('--border-op', v);
 }
-
+ 
 function setFont(f){
   document.querySelectorAll('.logo-wordmark,.section-title,.card-title,.kpi-val,.donut-mid-val').forEach(el=>{
     el.style.fontFamily = f+',serif';
@@ -1196,33 +1194,33 @@ function setFont(f){
   .logo-wordmark,.section-title,.card-title,.kpi-val,.donut-mid-val,.sp-title{font-family:${f},serif!important;}`;
   savePref('--font', f);
 }
-
+ 
 function setFontSize(v){
   document.body.style.fontSize = v+'px';
   document.getElementById('size-val').textContent = v+'px';
   savePref('--font-size', v);
 }
-
+ 
 function setHeadingWeight(v){
   let st = document.getElementById('dyn-weight');
   if(!st){st=document.createElement('style');st.id='dyn-weight';document.head.appendChild(st);}
   st.textContent = `.logo-wordmark,.section-title,.card-title,.kpi-val,.donut-mid-val{font-weight:${v}!important;}`;
   savePref('--heading-weight', v);
 }
-
+ 
 function setRadius(v){
   document.documentElement.style.setProperty('--r', v+'px');
   document.documentElement.style.setProperty('--rl', (parseInt(v)+2)+'px');
   document.getElementById('radius-val').textContent = v+'px';
   savePref('--radius', v);
 }
-
+ 
 function setDensity(d){
   const map={compact:'60px 28px 40px',normal:'80px 36px 60px',relaxed:'90px 48px 80px'};
   document.querySelectorAll('.page').forEach(p=>p.style.padding=map[d]);
   savePref('--density', d);
 }
-
+ 
 function applyPreset(name){
   const p = PRESETS[name];
   if(!p) return;
@@ -1234,7 +1232,7 @@ function applyPreset(name){
   syncInputs(p);
   savePref('--preset', name);
 }
-
+ 
 function syncInputs(p){
   const map = {bg:'c-bg',s1:'c-s1',s2:'c-s2',s3:'c-s3',t1:'c-t1',t2:'c-t2',t3:'c-t3',pos:'c-pos',neg:'c-neg',accent:'c-accent'};
   Object.entries(map).forEach(([k,id])=>{
@@ -1246,11 +1244,11 @@ function syncInputs(p){
   if(p.font) document.getElementById('sel-font').value=p.font;
   if(p.weight) document.getElementById('sel-weight').value=p.weight;
 }
-
+ 
 function resetStyles(){
   applyPreset('xbloom');
 }
-
+ 
 function copyCSS(){
   const vars = ['--bg','--s1','--s2','--s3','--t1','--t2','--t3','--pos','--neg','--accent','--b1','--b2','--r','--rl'];
   const root = getComputedStyle(document.documentElement);
@@ -1264,7 +1262,7 @@ function copyCSS(){
     setTimeout(()=>btn.textContent='Copy theme as CSS', 2000);
   });
 }
-
+ 
 /* localStorage persistence */
 function savePref(k,v){ try{localStorage.setItem('xb-style-'+k,v);}catch(e){} }
 function loadPrefs(){
@@ -1298,6 +1296,6 @@ function loadPrefs(){
 // Init on load
 document.addEventListener('DOMContentLoaded', loadPrefs);
 </script>
-
+ 
 </body>
 </html>
